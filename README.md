@@ -1,4 +1,4 @@
-![alt tag](http://asasys.com.br/www/uploads/asasys-logotipo-branco.png)
+![alt tag](http://asasys.com.br/uploads/asasys-logotipo-branco.png)
 ===========
 
 Projeto particular de desenvolvimento do novo website ASAsys. O projeto consiste em codificação da página estática, para em um momento posterior fazer as adaptações como tema de wordpress.
