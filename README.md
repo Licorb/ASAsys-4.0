@@ -8,7 +8,6 @@ Projeto particular de desenvolvimento do novo website ASAsys. O projeto consiste
 
 ## Tools:
 - Materialize CSS Framework
-- Grunt
 - Grunt-contrib-watch
 - Grunt-contrib-sass
 - Grunt-build-control
