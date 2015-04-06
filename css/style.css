@@ -8,7 +8,7 @@
 
 nav ul a,
 nav .brand-logo {
-  color: #424242;
+  color: #444;
 }
 
 p {
@@ -53,35 +53,3 @@ p {
 footer.page-footer {
   margin: 0;
 }
-
-/* ------------------------ LAYOUT --------------------- */
-
-.nav-sup {
-  font-size: 1rem;
-  height: 20px;
-  line-height: 20px;
-  width: 100%;
-  color: #000000;
-  overflow: hidden;
-  position: relative; 
-  font-size: 1rem;
-}
-.nav-sup ul {
-margin: 0; }
-    .nav-sup ul li {
-      -webkit-transition: background-color 0.3s;
-      -moz-transition: background-color 0.3s;
-      -o-transition: background-color 0.3s;
-      -ms-transition: background-color 0.3s;
-      transition: background-color 0.3s;
-      float: left;
-      padding: 0px; }
-      .nav-sup ul li:hover, nav ul li.active {
-        background-color: rgba(0, 0, 0, 0.1); }
-    .nav-sup ul a {
-      font-size: 1rem;
-      color: #424242;
-      display: inline-block;
-      padding: 0px 15px; }
-    .nav-sup ul.left {
-      float: left; }
