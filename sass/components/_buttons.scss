@@ -12,6 +12,8 @@
   vertical-align: middle;
   // Gets rid of tap active state
   -webkit-tap-highlight-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
 }
 // Disabled shared style
 .btn.disabled, .btn-floating.disabled, .btn-large.disabled, .btn:disabled, .btn-large:disabled, .btn-floating:disabled {
@@ -28,6 +30,17 @@
     color: $button-color-disabled;
   }
 }
+
+.call-button {
+  text-align: right;
+}
+
+@media #{$medium-and-up} {
+  .call-button {
+    text-align: center;
+  }
+}
+
 // Shared icon styles
 .btn, .btn-floating, .btn-large, .btn-flat {
   i {

@@ -86,6 +86,12 @@ ul {
   background-color: color("grey", "lighten-2");
 }
 
+.divider-mobile {
+  height: 1px;
+  overflow: hidden;
+  background-color: color("grey", "lighten-2");
+}
+
 
 //  Blockquote
 
@@ -694,4 +700,13 @@ span.badge {
 
 .no-padding {
   padding: 0 !important;
+}
+
+
+/******************
+------Ajustes------
+******************/
+
+.btn-sociais {
+  height: 20px;
 }
