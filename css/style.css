@@ -54,31 +54,93 @@ footer.page-footer {
   margin: 0;
 }
 
-.newscard {
-  margin: 40px 0;
+.noticecard {
+  margin: 1rem 0 3.3rem;
   width: 100%;
   position: relative;
+  float: left;
+}
+
+.noticecard-image {
+  width: 35%;
+  float: left;
+}
+
+.noticecard-image img{
+  width: 100%;
+  float: left;
+}
+
+.noticecard-content {
+  width: 63%;
+  padding-left: 2%;
+  float: left;
+}
+.noticecard-content h1{
+  margin-top: 0px !important;
+}
+
+.noticecard-content .caption {
+  position: absolute;
+  top: 1.1em;
+}
+
+.noticecard-content .chamada {
+  padding-top: 1em;
+  line-height: 1.5rem !important;
+}
+
+.newscard-wrap {
+  margin: 1rem 0 1rem;
+  width: 99%;
+  position: relative;
+  float: right;
+}
+
+.newscard a {color: #424242;}
+
+
+.newscard-date {
+  width: 17%;
+  float: left;
+  padding-right: 2%;
+}
+
+.newscard-date .caption {
+  line-height: 1.2rem !important;
+  font-size: 1.1rem;
+  text-align: right;
+  padding: 0;
+  margin: 0;
 }
 
 .newscard-image {
-  width: 40%;
+  width: 23%;
   float: left;
 }
 
-.newscard-image img{
+.newscard-image img {
   width: 100%;
+  vertical-align: text-top;
+  -webkit-transition: .2s all;
+}
+
+.imghover {
+  outline:  0.15rem solid #424242;
+  -webkit-filter: brightness(80%);
+}
+
+.linkhover {
+  text-decoration: underline;
 }
 
 .newscard-content {
-  width: 100%;
-  padding-left: 44%;
+  width: 58%;
+  padding-left:2%;
   float: left;
-  position: absolute;
-  top:-20px;
-
 }
 
 .newscard-content p{
-  vertical-align: top;
-  line-height: 1.5rem !important;
+  line-height: 1.3rem !important;
+  margin-top: -2px;
 }
