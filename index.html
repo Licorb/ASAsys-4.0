@@ -8,6 +8,9 @@
   <!-- CSS  -->
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css"/>
+
 </head>
 <body>
 
@@ -151,8 +154,8 @@
 		    		<!-- Módulo de avisos -->
 			    	<div class="col s12 m7">
 			    		<h2>Avisos</h2>
-						<div class="slider-avisos">
-    						<ul class="slides-avisos">
+						<div class="slideravisos">
+    						<ul class="slidesavisos">
 	    						<li>
 						    		<!-- Caixa de avisos -->
 							        <div class="noticecard">
@@ -271,10 +274,25 @@
 						<em>'A ASAsys oferece resoluções rápidas de problemas, com bom suporte e ainda uma flexibilidade para adaptação de novas ferramentas."<br>(Márcio - Diretor MegaFarma)</em>
 					</blockquote>
 				</div> <!-- Fim do Depoimento -->
+
+
+
 			</div> <!-- Row -->
+			<div class="faixaclientes">
+				  <div><img width="160px" src="img/clientes/atual-min.png" alt=""></div>
+				  <div><img width="160px" src="img/clientes/cityfarma-min.png" alt=""></div>
+				  <div><img width="160px" src="img/clientes/droga-news-min.png" alt=""></div>
+				  <div><img width="160px" src="img/clientes/d-vitaminas-min.png" alt=""></div>
+				  <div><img width="160px" src="img/clientes/tamoio-min.png" alt=""></div>
+				  <div><img width="160px" src="img/clientes/toque-bela-min.png" alt=""></div>
+				  <div><img width="160px" src="img/clientes/cityfarma-min.png" alt=""></div>
+				  <div><img width="160px" src="img/clientes/droga-news-min.png" alt=""></div>
+				  <div><img width="160px" src="img/clientes/d-vitaminas-min.png" alt=""></div>
+				  <div><img width="160px" src="img/clientes/tamoio-min.png" alt=""></div>
+				</div>
 		</div> <!-- Section -->
 	</div><<!--Container-->
-
+					
   <footer class="page-footer orange">
     <div class="container">
       <div class="row">
@@ -316,18 +334,57 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
 
-  <script>
+  <script type="text/javascript">
 	$(window).on("scroll touchmove", function () {
 	$('#navigation, #navigationfix').toggleClass('collapse', $(document).scrollTop() > 0);
 	});
 
-	$(document).ready(function(){
+    /* -- Jquery do Slick carrousel -- */
+    $(document).ready(function(){
+	  $('.faixaclientes').slick({
+	  	  autoplay: true,
+		  speed: 300,
+		  slidesToShow: 4,
+		  slidesToScroll: 4,
+		  responsive: [
+		    {
+		      breakpoint: 1024,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 3,
+		        infinite: true,
+		        dots: true
+		      }
+		    },
+		    {
+		      breakpoint: 600,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 2
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 2
+		      }
+		    }
+		    // You can unslick at a given breakpoint now by adding:
+		    // settings: "unslick"
+		    // instead of a settings object
+		  ]
+		});
+	});
+
+    $(document).ready(function(){
       $('.slider').slider({full_width: false});
     });
 
     $(document).ready(function(){
-      $('.slider-avisos').slider({full_width: false});
+      $('.slideravisos').slider({full_width: false});
     });
 
     /* -- jquery para seleção hover das notícias [imagem]--*/
