@@ -21,7 +21,22 @@
 
 .section {
 	padding-top: 2.5rem;
-	padding-bottom: 4rem;
+	padding-bottom: 3rem;
+
+  &.no-pad {
+    padding: 0;
+  }
+  &.no-pad-bot {
+    padding-bottom: 0;
+  }
+  &.no-pad-top {
+    padding-top: 0;
+  }
+}
+
+.section-banner {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
 
   &.no-pad {
     padding: 0;
