@@ -32,6 +32,18 @@
   &.no-pad-top {
     padding-top: 0;
   }
+
+  &.extra-pad {
+    padding: 3rem;
+  }
+  
+  &.extra-pad-bot {
+    padding-bottom: 5rem;
+  }
+
+  &.extra-pad-top {
+    padding-top: 3.5rem;
+  }
 }
 
 .section-banner {

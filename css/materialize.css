@@ -2587,7 +2587,7 @@ ul {
 }
 
 a {
-  color: #ffc107;
+  color: #424242;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -2861,14 +2861,20 @@ ul.staggered-list li {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #ffc107;
+  background-color: #ffb300;
 }
 footer.page-footer .footer-copyright {
   overflow: hidden;
   height: 50px;
   line-height: 50px;
-  color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(51, 51, 51, 0.08);
+  color: #424242;
+  background-color: #ffc107;
+}
+footer.page-footer a:hover {
+  text-decoration: underline;
+}
+footer.page-footer .menufooter li {
+  padding-top: 0.5rem;
 }
 
 table, th, td {
@@ -3303,7 +3309,12 @@ span.badge.new:after {
 ------Ajustes------
 ******************/
 .btn-sociais {
-  height: 20px;
+  width: 5.2rem;
+  padding: 1rem 0.5rem;
+}
+
+.faixaclientes img {
+  width: 60%;
 }
 
 @font-face {
@@ -6324,6 +6335,15 @@ span.badge.new:after {
 .section.no-pad-top {
   padding-top: 0;
 }
+.section.extra-pad {
+  padding: 3rem;
+}
+.section.extra-pad-bot {
+  padding-bottom: 5rem;
+}
+.section.extra-pad-top {
+  padding-top: 3.5rem;
+}
 
 .section-banner {
   padding-top: 0.5rem;
@@ -6655,6 +6675,9 @@ nav .brand-logo {
   font-size: 2.1rem;
   padding: 0;
 }
+nav .brand-logo img {
+  height: 60px;
+}
 nav .brand-logo.center {
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -6698,6 +6721,12 @@ nav ul a {
   display: block;
   padding: 0 15px;
 }
+@media only screen and (min-width: 993px) and (max-width: 1160px) {
+  nav ul a {
+    padding: 0 9px;
+    font-size: 0.9rem;
+  }
+}
 nav ul.left {
   float: left;
 }
@@ -6739,7 +6768,7 @@ nav .input-field label.active {
 
 .navbar-fixed {
   position: relative;
-  height: 54px;
+  height: 56px;
   z-index: 998;
 }
 .navbar-fixed nav {
@@ -6747,7 +6776,7 @@ nav .input-field label.active {
   height: 64px;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 993px) {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 64px;
     line-height: 64px;
@@ -6799,14 +6828,12 @@ nav .input-field label.active {
   float: left;
 }
 
-@media only screen and (min-width: 993px) {
 .nav-sup.collapse {
   height: 0;
 }
 
 .navbar-fixed.collapse nav {
   height: 64px;
-}
 }
 
 @font-face {
@@ -8948,6 +8975,29 @@ select {
 .side-nav .logo img {
   padding-top: 20px;
   width: 100%;
+}
+
+.side-nav .menusociais li{
+  float: left;
+  display: inline;
+  margin: 1rem 15px;
+  background-color: red;
+  width: 204px;
+}
+
+.side-nav .menusociais li a {
+  float: left;
+  width: 25%;
+  background-color: green;
+  line-height: 30px;
+
+}
+
+.side-nav .menusociais img {
+  float: left;
+  display: inline;
+  width: 200%;
+  background-color: blue;
 }
 
 .drag-target {

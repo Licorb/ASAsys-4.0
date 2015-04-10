@@ -142,3 +142,8 @@ footer.page-footer {
   line-height: 1.3rem !important;
   margin-top: -2px;
 }
+
+#menusociais {
+  background-color: #ccc;
+  width: 100%;
+}

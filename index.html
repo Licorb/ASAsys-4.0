@@ -30,7 +30,7 @@
 
 			<!-- Barra de navegação principal -->
 		    <div class="nav-wrapper container">
-		      	<a id="logo-container" href="#" class="brand-logo"><img width="120px" src="img/logo-asasys.png" alt=""></a></a>
+		      	<a id="logo-container" href="#" class="brand-logo"><img src="img/logo-asasys.png" alt=""></a></a>
 		      	<ul class="right hide-on-med-and-down">
 			        <li><a href="#">HOME</a></li>
 			        <li><a href="#">PRODUTOS</a></li>	      
@@ -56,7 +56,15 @@
 			        <li><a href="#">NOTÍCIAS</a></li>
 			        <li><a href="#">CONTATO</a></li>
 			        <li class="divider"></li>
-			    </ul>
+			        <div class="menusociais">
+					<li>
+						<a href="#"><img src="img/sociais/ic-twitter.svg" alt=""></a>
+						<a href="#"><img src="img/sociais/ic-twitter.svg" alt=""></a>
+						<a href="#"><img src="img/sociais/ic-twitter.svg" alt=""></a>
+						<a href="#"><img src="img/sociais/ic-twitter.svg" alt=""></a>
+					</li>
+					</div>
+				</ul>
 
 		      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 		    </div> <!-- Fim da barra de navegação principal -->
@@ -64,7 +72,7 @@
 	</div> <!-- Fim da barra de navegação -->
 
 	<!-- Banner/Imagem principal -->
-  	<div class="section-banner" id="index-banner">
+  	<div class="section-banner no-pad-bot" id="index-banner">
         <div class="slider">
     		<ul class="slides">
 		      	<li>
@@ -80,11 +88,11 @@
 
 	<!--Área de chamados/destaques -->
 	<div class="container">
-	    <div class="section">
+	    <div class="section no-pad-bot">
 	      	<div class="row">
 
 	      		<!-- Destaque número 1 -->
-	        	<div class="col s12 m4">
+	        	<div class="col m12 l4">
 		          	<div class="icon-block">
 		            	<h2 class="center grey-text text-darken-3"><i class="large mdi-hardware-laptop-chromebook"></i></h2>
 		            	<h1 class="center">Produtos ASAsys</h1>
@@ -99,12 +107,12 @@
 		        	</div>
 	<!-- Break -->  <br>
 	<!-- Break -->  <br>
-	<!-- Divider--> <div class="divider-mobile hide-on-med-and-up"></div>
+	<!-- Divider--> <div class="divider-mobile hide-on-large-only"></div>
 	<!-- Break -->  <br>
 		    	</div> <!-- Fim do destaque número 1 -->
 
 				<!-- Destaque número 2 -->
-		        <div class="col s12 m4">
+		        <div class="col m12 l4">
 		          	<div class="icon-block">
 			            <h2 class="center grey-text text-darken-3"><i class="large mdi-communication-business"></i></h2>
 			            <h1 class="center">Quem Somos</h1>
@@ -119,12 +127,12 @@
 		          	</div>
 	<!-- Break -->  <br>
 	<!-- Break -->  <br>
-	<!-- Divider--> <div class="divider-mobile hide-on-med-and-up"></div>
+	<!-- Divider--> <div class="divider-mobile hide-on-large-only"></div>
 	<!-- Break -->  <br>
 		        </div> <!-- Fim do destaque número 2 -->
 
 				<!-- Destaque número 3 -->
-		        <div class="col s12 m4">
+		        <div class="col m12 l4">
 		          	<div class="icon-block">
 			            <h2 class="center grey-text text-darken-3"><i class="large mdi-communication-chat"></i></h2>
 			            <h1 class="center">Avisos & Notícias</h1>
@@ -140,7 +148,6 @@
 	<!-- Break -->  <br>
 	<!-- Break -->  <br>
 		        </div> <!-- Fim do destaque número 3 -->
-
 	  		</div> <!-- Fim row -->
 	    </div> <!-- Fim Section -->
 	</div> <!-- Fim do módulo de chamados/destaques -->
@@ -152,10 +159,10 @@
 		    	<div class="row">
 
 		    		<!-- Módulo de avisos -->
-			    	<div class="col s12 m7">
+			    	<div class="col m12 l7">
 			    		<h2>Avisos</h2>
 						<div class="moduloavisos">
-													    		<!-- Caixa de avisos -->
+								 <!-- Caixa de avisos -->
 							        <div class="noticecard">
 							        	<div class="noticecard-image">
 							        		<img src="img/nfe-aviso.png" alt="">
@@ -192,7 +199,7 @@
 				    </div> <!-- Fim do módulo de avisos -->
 
 					<!-- Módulo de notícias -->
-				    <div class="col s12 m5">
+				    <div class="col m12 l5">
 				    	<h2>Notícias</h2>
 
 				    	<!-- Caixa de notícia única -->
@@ -254,7 +261,7 @@
 
 	<!-- Área 'Nossos Clientes' -->
 	<div class="container">
-		<div class="section">
+		<div class="section extra-pad-bot">
 			<div class="row">
 				<div class="col s12">
 					<h2 class="center">Nossos Clientes</h2>
@@ -269,59 +276,102 @@
 						<em>'A ASAsys oferece resoluções rápidas de problemas, com bom suporte e ainda uma flexibilidade para adaptação de novas ferramentas."<br>(Márcio - Diretor MegaFarma)</em>
 					</blockquote>
 				</div> <!-- Fim do Depoimento -->
-
-
-
 			</div> <!-- Row -->
+
+			<!-- Slider dos clientes, cada cliente em uma div -->
 			<div class="faixaclientes">
-				  <button type="button" class="slick-prev">Previous</button>
-				  <div><img width="160px" src="img/clientes/atual-min.png" alt=""></div>
-				  <div><img width="160px" src="img/clientes/cityfarma-min.png" alt=""></div>
-				  <div><img width="160px" src="img/clientes/droga-news-min.png" alt=""></div>
-				  <div><img width="160px" src="img/clientes/d-vitaminas-min.png" alt=""></div>
-				  <div><img width="160px" src="img/clientes/tamoio-min.png" alt=""></div>
-				  <div><img width="160px" src="img/clientes/toque-bela-min.png" alt=""></div>
-				  <div><img width="160px" src="img/clientes/cityfarma-min.png" alt=""></div>
-				  <div><img width="160px" src="img/clientes/droga-news-min.png" alt=""></div>
-				  <div><img width="160px" src="img/clientes/d-vitaminas-min.png" alt=""></div>
-				  <div><img width="160px" src="img/clientes/tamoio-min.png" alt=""></div>
-				  <button type="button" class="slick-next">Next</button>
-				</div>
+				<div><img src="img/clientes/atual-min.png" alt=""></div>
+				<div><img src="img/clientes/cityfarma-min.png" alt=""></div>
+				<div><img src="img/clientes/droga-news-min.png" alt=""></div>
+				<div><img src="img/clientes/d-vitaminas-min.png" alt=""></div>
+				<div><img src="img/clientes/tamoio-min.png" alt=""></div>
+				<div><img src="img/clientes/toque-bela-min.png" alt=""></div>
+				<div><img src="img/clientes/cityfarma-min.png" alt=""></div>
+				<div><img src="img/clientes/droga-news-min.png" alt=""></div>
+				<div><img src="img/clientes/d-vitaminas-min.png" alt=""></div>
+				<div><img src="img/clientes/tamoio-min.png" alt=""></div>
+				<div><img src="img/clientes/toque-bela-min.png" alt=""></div>
+				<div><img src="img/clientes/cityfarma-min.png" alt=""></div>
+			</div> <!-- fim do slider dos clientes -->
+
 		</div> <!-- Section -->
-	</div><<!--Container-->
+	</div><!--Container-->
 					
-  <footer class="page-footer orange">
+  <footer class="page-footer amber darken-1">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+        <div class="col m12 l3">
+          <h1>Telefones Úteis</h1>
+          <h4>Plantão Feriados</h4>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+          <li>Das 9:00 às 13:00 e 14:00 às 18:00</li>
+          <li>(21)99958-6035</li>
+          <li>(21)99542-8895</li>
           </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
+          <h4>Gerência do Suporte</h4>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+          <li>(21)98876-9622</li>
+          <li>(21)7755-5752</li>
+          <li>ID: 24*105428</li>
           </ul>
+          <h4>Gerência Comercial</h4>
+          <ul>
+          <li>(21)98857-2491</li>
+          </ul>
+          <br>
+          <br>
+          <div class="divider-mobile amber lighten-2 hide-on-large-only"></div>
+          <br>
+        </div>
+
+        <div class="col m12 l5">
+			<h1>Redes Sociais</h1>
+          <ul class="iconessociais">
+			<a href="http://facebook.com"><img class="btn-sociais" src="img/sociais/ic-facebook.svg" alt=""></a>
+			<img class="btn-sociais" src="img/sociais/ic-twitter.svg" alt="">
+			<img class="btn-sociais" src="img/sociais/ic-google-plus.svg" alt="">
+			<img class="btn-sociais" src="img/sociais/ic-linkedin.svg" alt="">
+          </ul>
+          <h1>Parceiros</h1>
+          <ul class="iconessociais">
+			<img class="btn-sociais" src="img/parceiros/alog-neg-min.png" alt="">
+			<img class="btn-sociais" src="img/parceiros/farmacia-popular-neg-min.png" alt="">
+			<img class="btn-sociais" src="img/parceiros/software-express-neg-min.png" alt="">
+			<img class="btn-sociais" src="img/parceiros/vale-mais-saude-neg-min.png" alt="">
+          </ul>
+          <br>
+          <br>
+          <div class="divider-mobile amber lighten-2 hide-on-large-only"></div>
+          <br>
+        </div>
+
+        <div class="menufooter col m12 l4">
+			<h1>Navegação</h1>
+          	<ul class="col m12 l6">
+            <li><a href="#!">Home</a></li>
+            <li><a href="#!">Produtos</a></li>
+            <li><a href="#!">A Empresa</a></li>
+            <li><a href="#!">Suporte</a></li>
+            <li><a href="#!">Clientes</a></li>
+            <li><a href="#!">Avisos</a></li>
+            <li><a href="#!">Notícias</a></li>
+            <li><a href="#!">Contato</a></li>
+          </ul>
+          <ul class="col m12 l6">
+            <li><a href="#!">Abertura de Chamados</a></li>
+            <li><a href="#!">Área Restrita</a></li>
+            <li><a href="#!">Downloads Mobile</a></li>
+            <li><a href="#!">Trabalhe Conosco</a></li>
+            <li><a href="#!">Cadastro de Representantes</a></li>
+            <li><a href="#!">Localização</a></li>
+          </ul>
+          <br>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      	<p class="center">2015 © ASAsys Informática | Todos os direitos reservados</p>
       </div>
     </div>
   </footer>
@@ -340,45 +390,51 @@
 
     /* -- Jquery do Slick carrousel -- */
     $(document).ready(function(){
-	  $('.faixaclientes').slick({
-	  	  autoplay: true,
-	  	  infinite: true,
-		  speed: 300,
-		  slidesToShow: 4,
-		  slidesToScroll: 4,
-		  responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow: 3,
-		        slidesToScroll: 3,
-		        infinite: true,
-		        dots: true
-		      }
-		    },
-		    {
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		      }
-		    }
-		    // You can unslick at a given breakpoint now by adding:
-		    // settings: "unslick"
-		    // instead of a settings object
-		  ]
+
+    	/* -------- banner-slider principal -------- */
+	  	$('.slider').slider({full_width: false});
+
+      	/* --------------- slider dos logotipos de clientes -- */
+		$('.faixaclientes').slick({
+			autoplay: true,
+			infinite: true,
+			draggable: false,
+			autoplaySpeed: 1,
+			cssEase: 'linear',
+			speed: 12000,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			arrows: false,
+			responsive: [
+				{
+				breakpoint: 1024,
+					settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					}
+				},
+				{
+				breakpoint: 600,
+					settings: {
+					autoplay: false,
+					autoplaySpeed: 0,
+					swipe: true,
+					speed: 300,
+					slidesToShow: 2,
+					slidesToScroll: 2
+					}
+				}
+			]
 		});
 
-	  	  $('.moduloavisos').slick({
-	  	  	dots: true,
-	  	  	arrows: false
-	  	  });
+       	/* ---------------- slider dos avisos -- */
+		$('.moduloavisos').slick({
+			dots: true,
+			arrows: false
+		});
+
+
 	});
-
-    $(document).ready(function(){
-      $('.slider').slider({full_width: false});
-    });
-
 
     /* -- jquery para seleção hover das notícias [imagem]--*/
     $( ".newscard" ).find( "p" ).hover(

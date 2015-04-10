@@ -53,6 +53,25 @@
     }
   }
 
+  .menusociais {
+    display: inline;
+    background-color: red;
+  }
+
+
+  .menusociais a{
+    display: inline;
+    height: 40px;
+    line-height: 40px;
+
+    img {
+      display: inline;
+      float: left;
+      width: 40%;
+      padding: 2%;
+    }
+  }
+
 }
 
 
