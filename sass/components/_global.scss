@@ -724,3 +724,49 @@ span.badge {
 .faixaclientes img{
   width: 60%;
 }
+
+.produto-faixa img {
+  width: 50%;
+  margin-top: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.produto-faixa h4 {
+  margin-top: -3px;
+}
+
+.breadcrumb {
+  font-size: 1em;
+  color: #616161;
+  font-weight: 300;
+
+  a {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: $secondary-color;
+    text-decoration: underline;
+  }
+}
+
+.list-style {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem;
+  }
+
+  li {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+
+    &:before {
+      content: "■  ";
+      font-family: "Arial Black";
+      color: $secondary-color;
+      padding-right: 1rem;
+    }
+  }
+}

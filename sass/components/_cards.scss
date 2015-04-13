@@ -15,7 +15,17 @@
   background-color: $card-bg-color;
   border-radius: 2px;
   @extend .z-depth-1;
+  
+  &.decorate {
+  border-top: 3px solid $secondary-color;
+  border-bottom: 3px solid $secondary-color;
+  }
 
+
+  p {
+    line-height: 1.5rem;
+    padding: 0 1rem;
+  }
 
   .card-title {
     color: #fff;

@@ -162,3 +162,9 @@ button.btn-floating {
     font-size: 1.6rem;
   }
 }
+
+.btn-full {
+  @extend .btn;
+  width:90%;
+  margin: 5%;
+}

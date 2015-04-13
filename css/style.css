@@ -54,6 +54,7 @@ footer.page-footer {
   margin: 0;
 }
 
+/*--------- cards de avisos ----- */
 .noticecard {
   margin: 1rem 0 3.3rem;
   width: 100%;
@@ -88,6 +89,7 @@ footer.page-footer {
   line-height: 1.5rem !important;
 }
 
+/*---------- cards de notícias --------*/
 .newscard-wrap {
   margin: 1rem 0 1rem;
   width: 99%;
@@ -147,3 +149,44 @@ footer.page-footer {
   background-color: #ccc;
   width: 100%;
 }
+
+/* ---------- cards dos produtos --------- */
+.prodcard {
+  float: left;
+  width: 90%;
+  margin: 3rem 0;
+}
+
+.prodcard-image {
+  float: left;
+  width: 24%;
+}
+
+.prodcard-image img{
+  width: 100%;
+  float: left;
+}
+
+.prodcard-content {
+  float: left;
+  margin-left: 2%;
+  width: 74%;
+  margin-top: -15px;
+}
+
+.prodcard-content p{
+  line-height: 1.4rem;
+}
+
+.prodcard:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* --------- página de produtos ---- */
+
+.texto-produto {
+  margin-bottom: 2rem;
+}
+
