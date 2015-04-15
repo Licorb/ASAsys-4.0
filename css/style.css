@@ -55,15 +55,19 @@ footer.page-footer {
 }
 
 /*--------- cards de avisos ----- */
+.moduloavisos {
+  max-width: 99%;
+}
+
 .noticecard {
   margin: 1rem 0 3.3rem;
-  width: 100%;
+  max-width: 99%;
   position: relative;
   float: left;
 }
 
 .noticecard-image {
-  width: 35%;
+  max-width: 35%;
   float: left;
 }
 
@@ -97,7 +101,19 @@ footer.page-footer {
   float: right;
 }
 
-.newscard a {color: #424242;}
+.newscard a {
+  color: #424242;
+  padding: 15px 0 25px;
+}
+
+.content-newscard:hover .newscard-image img{
+  outline:  0.15rem solid #424242;
+  -webkit-filter: brightness(80%);
+}
+
+.content-newscard:hover .newscard-text p {
+  text-decoration: underline !important;
+}
 
 
 .newscard-date {
@@ -125,30 +141,17 @@ footer.page-footer {
   -webkit-transition: .2s all;
 }
 
-.imghover {
-  outline:  0.15rem solid #424242;
-  -webkit-filter: brightness(80%);
-}
-
-.linkhover {
-  text-decoration: underline;
-}
-
-.newscard-content {
+.newscard-text {
   width: 58%;
   padding-left:2%;
   float: left;
 }
 
-.newscard-content p{
+.newscard-text p{
   line-height: 1.3rem !important;
   margin-top: -2px;
 }
 
-#menusociais {
-  background-color: #ccc;
-  width: 100%;
-}
 
 /* ---------- cards dos produtos --------- */
 .prodcard {
@@ -190,3 +193,18 @@ footer.page-footer {
   margin-bottom: 2rem;
 }
 
+/*-------- menu sociais no rodapé */
+#menusociais {
+  background-color: #ccc;
+  width: 100%;
+}
+
+/*-----------página empresa --*/
+#texto-empresa h4{
+  padding-bottom: 0.2em;
+}
+
+#texto-empresa p{
+  padding: 0;
+  margin-top: -5px;
+}
