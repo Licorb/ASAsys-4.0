@@ -26,6 +26,7 @@ $button-line-height: 36px !default;
 /*** Cards ***/
 $card-padding: 20px !default;
 $card-bg-color: #fff !default;
+$card-action-bg: color("grey", "lighten-3") !default;
 
 /*** Collapsible ***/
 $collapsible-height: 3rem !default;
@@ -39,6 +40,7 @@ $dropdown-color: $secondary-color !default;
 /*** Fonts ***/
 $roboto-font-path: "../font/roboto/" !default;
 $icons-font-path: "../font/material-design-icons/" !default;
+$icons-sociais-path: "..font/icones-sociais-asa/" !default;
 
 /*** Forms ***/
 // Text Inputs + Textarea

@@ -542,7 +542,6 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 
 .select-wrapper {
   position: relative;
-  margin-top: 15px;
 
   input.select-dropdown {
     position: relative;
@@ -554,7 +553,8 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
     outline: none;
     height: 3rem;
     line-height: 3rem;
-    width: 100%;
+    width: 92%;
+    float: right;
     font-size: 1rem;
     margin: 0 0 15px 0;
     padding: 0;

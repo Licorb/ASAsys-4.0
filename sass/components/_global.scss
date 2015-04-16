@@ -32,6 +32,11 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+iframe {
+  width: 100%;
+  border: 1px solid #cccccc;
+  height: 300px;
+}
 
 // Positioning
 .valign-wrapper {
@@ -145,7 +150,7 @@ video.responsive-video {
     float: left;
     width: 30px;
     height: 30px;
-    margin: 0 10px;
+    margin: 40px 10px;
     border-radius: 2px;
     text-align: center;
 

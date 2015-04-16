@@ -54,6 +54,17 @@ footer.page-footer {
   margin: 0;
 }
 
+/*--- rodapé -- */
+#iconesrodape span{
+  padding: 0 2%;
+  transition: all .5s;
+}
+
+#iconesrodape a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
 /*--------- cards de avisos ----- */
 .moduloavisos {
   max-width: 99%;
@@ -193,11 +204,6 @@ footer.page-footer {
   margin-bottom: 2rem;
 }
 
-/*-------- menu sociais no rodapé */
-#menusociais {
-  background-color: #ccc;
-  width: 100%;
-}
 
 /*-----------página empresa --*/
 #texto-empresa h4{
@@ -208,3 +214,28 @@ footer.page-footer {
   padding: 0;
   margin-top: -5px;
 }
+
+#iconessociais span{
+  padding: 0 2%;
+  transition: all 1s;
+}
+
+#iconessociais a:hover{
+  color: #FFB300;
+  text-decoration: none;
+}
+
+/* Google Maps */
+.google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
