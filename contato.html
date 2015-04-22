@@ -59,17 +59,19 @@
 			        <li class="divider"></li>
 			        <!-- Div do conteúdo na parte inferior do sidenav -->
 			        <div class="menu-bottom">
-						<li> <!-- Redes Sociais -->
-							<a href="#"><img src="img/sociais/ic-facebook.svg" alt=""></a>
-							<a href="#"><img src="img/sociais/ic-twitter.svg" alt=""></a>
-							<a href="#"><img src="img/sociais/ic-google-plus.svg" alt=""></a>
-							<a href="#"><img src="img/sociais/ic-linkedin.svg" alt=""></a>
-						</li>
-						<li class="center"> <!-- Texto da empresa -->
-							<p class="center">2015 © ASAsys Informática<br>
-							contato@asasys.com.br <br>
-							(21) 2464-4444</p>
-						</li>
+						<ul class="iconesrodape">
+							<li> <!-- Redes Sociais -->
+								<a href="#"><img src="img/sociais/ic-facebook.svg" alt=""></a>
+								<a href="#"><img src="img/sociais/ic-twitter.svg" alt=""></a>
+								<a href="#"><img src="img/sociais/ic-google-plus.svg" alt=""></a>
+								<a href="#"><img src="img/sociais/ic-linkedin.svg" alt=""></a>
+							</li>
+							<li class="center"> <!-- Texto da empresa -->
+								<p class="center">2015 © ASAsys Informática<br>
+								contato@asasys.com.br <br>
+								(21) 2464-4444</p>
+							</li>
+						</ul>
 					</div><!-- Fim da div do conteúdo na parte inferior do sidenav -->
 				</ul><!-- Fim do sidenav -->
 
@@ -85,18 +87,14 @@
 			<!-- Breadcrumb -->
 			<p class="breadcrumb"><a href="index.html">Home</a> » Contato </p>
 			<!-- Texto introdutório -->
-			<div class="row">
-				<div class="col s12">
-					<h2 class="center">Fale Conosco</h2>
-					<br>
-					<p>Caso queira ser nosso representante, trabalhar conosco, ou tenha alguma dúvida, não deixe de entrar em contato com a nossa equipe, estamos prontos para atendê-los da melhor forma.
-					Caso queira ser nosso representante, trabalhar conosco, ou tenha alguma dúvida, não deixe de entrar em contato com a nossa equipe, estamos prontos para atendê-los da melhor forma.</p>
-				</div><!-- Fim fo texto introdutório -->
-			</div> <!-- Row -->
+			<h2 class="center">Fale Conosco</h2>
+			<br>
+			<p>Caso queira ser nosso representante, trabalhar conosco, ou tenha alguma dúvida, não deixe de entrar em contato com a nossa equipe, estamos prontos para atendê-los da melhor forma.
+			Caso queira ser nosso representante, trabalhar conosco, ou tenha alguma dúvida, não deixe de entrar em contato com a nossa equipe, estamos prontos para atendê-los da melhor forma.</p>
 		</div><!-- fim da section do texto -->
 
 		<!-- section inferior -->
-		<div class="section extra-pad-bot">
+		<div class="section">
 			<div class="row">
 				<!-- coluna centralizada dos telefones -->
 				<div class="col m8 offset-m2 s10 offset-s1">
@@ -118,9 +116,9 @@
 				
 				<!-- Coluna centralizada do formulário -->
 				<div class="col m8 offset-m2 s12">
-					
+					<!-- Div do formulário, decorado -->
 					<div class="card decorate">
-					
+						
 						<h3 class="center">Entre em contato</h3>
 						<p class="center">Quisque fermentum, quam nec malesuada vestibulum, sem leo commodo mauris, eu facilisis ipsum libero quis lorem. Morbi velit risus, volutpat quis commodo ut, gravida eget enim.
 						</p>
@@ -128,27 +126,31 @@
 						<!-- Campos do formulário -->
 						<form action="" class="col s12">
 							<div class="row">
+								<!-- nome -->
 						        <div class="input-field col s12">
 						        	<i class="grey-text text-darken-1 mdi-editor-mode-edit prefix"></i>
 						          	<input id="first_name" type="text" class="validate">
 						          	<label for="first_name">Nome</label>
 						        </div>
+						        <!-- Empresa -->
 						        <div class="input-field col s12">
 						        	<i class="grey-text text-darken-1 mdi-action-wallet-travel prefix"></i>
 						          	<input id="first_name" type="text" class="validate">
 						          	<label for="first_name">Empresa</label>
 						        </div>
+						        <!-- Email -->
 						        <div class="input-field col s12">
 						         	<i class="grey-text text-darken-1 mdi-communication-email prefix"></i>       
 						          	<input id="last_name" type="text" class="validate">
 						          	<label for="last_name">Email</label>
 						        </div>
+						        <!-- Telefone -->
 						        <div class="input-field col s12">
 						        	<i class="grey-text text-darken-1 mdi-communication-phone prefix"></i>
 						          	<input id="first_name" type="text" class="validate">
 						          	<label for="first_name">Telefone</label>
 						        </div>
-
+								<!-- Select do Setor -->
 								<div class="input-field col s12">
 									<i class="grey-text text-darken-1 mdi-action-track-changes prefix"></i>
 									<select>
@@ -157,10 +159,9 @@
 										<option value="2">Financeiro</option>
 										<option value="3">Suporte</option>
 										<option value="4">Diretoria</option>
-									</select>
-									
+									</select>			
 								</div>
-
+								<!-- Mensagem -->
 						      	<div class="input-field col s12">
 							        <i class="grey-text text-darken-1 mdi-editor-mode-edit prefix"></i>
 							        <textarea id="textarea1" class="materialize-textarea" lenght="600"></textarea>
@@ -173,14 +174,13 @@
 							  	</button><!--Fim do botão -->
 							</div>
 						</form> <!-- Fim do formulário -->
-
 					</div>
-				</div><!-- Fim da coluna centralizada da abertura de chamados -->
-
-				<!-- coluna centralizada dos telefones -->
+				</div><!-- Fim da coluna centralizada-- >
+				<!-- coluna centralizada do Endereço -->
 				<div class="col m8 offset-m2 s10 offset-s1">
+		<!--Break--><br>
+		<!--Break--><br>
 					<h1 class="center">Endereço</h1>
-					<br>
 					<ul class="center">
 						<h4>Central</h4>
 <!--Break-->			<br>	
@@ -191,33 +191,126 @@
 						<li>CEP: 21351-021</li>
 						<li>Telefone: (21) 2464-4444</li>
 					</ul>
-<!--Break-->		<br>
-<!--Break-->	<br>
-				</div><!-- Fim da coluna centralizada dos telefones -->
-			
-
+				</div><!-- Fim da coluna centralizada do Endereço -->
 			</div><!-- Fim da Row -->
-<!--Break--><br>
 		</div> <!-- fim da section inferior -->
-	
-	</div> <!-- Fim do conteúdo geral da página -->
+	</div> <!-- Fim do conteúdo em bloco geral da página -->
 
-	<div class="section-banner extra-pad-bot" id="index-banner">
-        <div class="slider">
-    		<ul class="slides">
-		      	<li>
-		      		<div class="google-maps">
-		        	<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7352.050993414981!2d-43.33780556356824!3d-22.8755165166507!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1429217083180" width="600" height="450" frameborder="0" style="border:0"></iframe>
-		        	<!-- Captions da imagem de destaque -->
-		        	<!--<div class="caption center-align">
-		          	<h3>This is our big Tagline!</h3>
-		          	<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-		        	</div>-->
-		        	</div>
-		      	</li>
-	    	</ul>
-	  	</div>
-    </div><!--Fim da área do Banner/Imagem principal -->
+	<!-- Div expandida do GoogleMaps -->
+	<div class="section-banner extra-pad-bot" id="index-banner">	
+	  	<div class="google-maps">
+	    	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14704.198058828999!2d-43.34054953777964!3d-22.874629225904886!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x5b9922ac6c45fda7!2sASAsys+Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1429542331957" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+	    	<!-- Captions da imagem de destaque -->
+	    	<!--<div class="caption center-align">
+	      	<h3>This is our big Tagline!</h3>
+	      	<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+	    	</div>-->
+	    </div>
+	</div><!--Fim da área do Google Maps -->
+	
+
+	<div class="container">
+		<!-- Seção dos collapsibles -->
+		<div class="section extra-pad-bot">
+			<div class="row">
+				<!-- centralização -->
+				<div class="col s10 offset-s1">
+					<h1 class="center">Oportunidades ASAsys</h1>
+					<!-- Collapsible 1 -->
+					<ul class="collapsible" data-collapsible="accordion">
+					    <li>
+					    	<!-- Título do collapsible 1 -->
+							<div class="collapsible-header grey lighten-3">
+								<i class="mdi-content-add-circle-outline"></i>
+								Trabalhe Conosco
+							</div>
+							<!-- Conteúdo do Collapsible -->
+							<div class="collapsible-body">
+								<h3 class="center">Entre em contato</h3>
+								<p class="center">Quisque fermentum, quam nec malesuada vestibulum, sem leo commodo mauris, eu facilisis ipsum libero quis lorem. Morbi velit risus, volutpat quis commodo ut, gravida eget enim.
+								</p>
+
+								<!-- Campos do formulário -->
+								<form action="" class="col s12">
+									<div class="row">
+										<!-- Nome -->
+								        <div class="input-field col s12">
+								        	<i class="grey-text text-darken-1 mdi-editor-mode-edit prefix"></i>
+								          	<input id="first_name" type="text" class="validate">
+								          	<label for="first_name">Nome</label>
+								        </div>
+								        <!-- Email -->
+								        <div class="input-field col s12">
+								         	<i class="grey-text text-darken-1 mdi-communication-email prefix"></i>       
+								          	<input id="last_name" type="text" class="validate">
+								          	<label for="last_name">Email</label>
+								        </div>
+								        <!-- Texto -->
+								      	<div class="input-field col s12">
+									        <i class="grey-text text-darken-1 mdi-editor-mode-edit prefix"></i>
+									        <textarea id="textarea1" class="materialize-textarea" lenght="600"></textarea>
+									        <label for="textarea1">Mensagem</label>
+								 		</div>
+
+									  	<!-- Botão formulário -->
+									  	<button class="btn-full right waves-effect waves-light" type="submit" name="action">Entrar em contato
+									    <i class="mdi-content-send right"></i>
+									  	</button><!--Fim do botão -->
+									</div> <!-- Fim da coluna do formulário -->
+								</form> <!-- Fim do formulário -->
+							</div> <!-- Fim do conteúdo -->
+						</li> 
+					</ul><!-- Fim do Collapsible 1 -->
+					
+					<!-- Collapsible 1 -->
+					<ul class="collapsible" data-collapsible="accordion">
+					    <li>
+					    	<!-- Título do collapsible 2 -->
+							<div class="collapsible-header grey lighten-3">
+								<i class="mdi-content-add-circle-outline"></i>
+								Cadastro de Representantes
+							</div>
+							<!-- Conteúdo do Collapsible -->
+							<div class="collapsible-body">
+								<h3 class="center">Entre em contato</h3>
+								<p class="center">Quisque fermentum, quam nec malesuada vestibulum, sem leo commodo mauris, eu facilisis ipsum libero quis lorem. Morbi velit risus, volutpat quis commodo ut, gravida eget enim.
+								</p>
+
+								<!-- Campos do formulário -->
+								<form action="" class="col s12">
+									<div class="row">
+										<!-- Nome -->
+								        <div class="input-field col s12">
+								        	<i class="grey-text text-darken-1 mdi-editor-mode-edit prefix"></i>
+								          	<input id="first_name" type="text" class="validate">
+								          	<label for="first_name">Nome</label>
+								        </div>
+								        <!-- Email -->
+								        <div class="input-field col s12">
+								         	<i class="grey-text text-darken-1 mdi-communication-email prefix"></i>       
+								          	<input id="last_name" type="text" class="validate">
+								          	<label for="last_name">Email</label>
+								        </div>
+								      	<!-- Texto -->
+									    <div class="input-field col s12">
+									        <i class="grey-text text-darken-1 mdi-editor-mode-edit prefix"></i>
+									        <textarea id="textarea1" class="materialize-textarea" lenght="600"></textarea>
+									        <label for="textarea1">Mensagem</label>
+								 		</div>
+
+									  	<!-- Botão formulário -->
+									  	<button class="btn-full right waves-effect waves-light" type="submit" name="action">Entrar em contato
+									    <i class="mdi-content-send right"></i>
+									  	</button><!--Fim do botão -->
+									</div>
+								</form> <!-- Fim do formulário -->
+							</div><!-- Fim do Conteúdo -->
+						</li> 
+					</ul><!-- Fim do Collapsible 2 -->
+				</div> <!-- Fim da centralização -->
+			</div>	
+		</div><!-- Fim da seção dos Collapsibles -->
+	</div> <!-- Fim do container geral do conteúdo -->
 	
 
   <!-- container geral do Rodapé -->					
@@ -253,18 +346,18 @@
 			<!-- Coluna das Redes Sociais e PArceiros -->
 	        <div class="col m12 l5">
 				<h1>Redes Sociais</h1>
-	        	<ul id="iconesrodape">
+	        	<ul class="iconesrodape">
 					<a href="http://facebook.com"><span><i class="medium ic-facebook"></i></span></a>
 					<a href="http://twitter.com"><span><i class="medium ic-twitter"></i></span></a>
 					<a href="http://plus.google.com"><span><i class="medium ic-google-plus"></i></span></a>
 					<a href="http://linkedin.com"><span><i class="medium ic-linkedin"></i></span></a>
 	          	</ul>
 	          	<h1>Parceiros</h1>
-	          	<ul class="iconessociais">
-					<img class="btn-sociais" src="img/parceiros/alog-neg-min.png" alt="">
-					<img class="btn-sociais" src="img/parceiros/farmacia-popular-neg-min.png" alt="">
-					<img class="btn-sociais" src="img/parceiros/software-express-neg-min.png" alt="">
-					<img class="btn-sociais" src="img/parceiros/vale-mais-saude-neg-min.png" alt="">
+	          	<ul class="iconesrodape">
+					<a href="#"><img class="btn-sociais" src="img/parceiros/alog-neg-min.png" alt=""></a>
+					<a href="#"><img class="btn-sociais" src="img/parceiros/farmacia-popular-neg-min.png" alt=""></a>
+					<a href="#"><img class="btn-sociais" src="img/parceiros/software-express-neg-min.png" alt=""></a>
+					<a href="#"><img class="btn-sociais" src="img/parceiros/vale-mais-saude-neg-min.png" alt=""></a>
 	          	</ul>
 	          <br> <!-- Break -->
 	          <br> <!-- Break -->
@@ -326,7 +419,8 @@
 	$(document).ready(function() {
     $('select').material_select();
     $('.slider').slider({full_width: false});
-  	});
+    });
+
    </script>
 
   </body>

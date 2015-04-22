@@ -2673,6 +2673,11 @@ ul li {
   background-color: #e0e0e0;
 }
 
+.divider-news {
+  height: 1px;
+  background-color: #e0e0e0;
+}
+
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
@@ -2710,6 +2715,15 @@ video.responsive-video {
   height: auto;
 }
 
+.paginacao {
+  float: right;
+  width: 100%;
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+}
 .pagination li {
   font-size: 1.2rem;
   float: left;
@@ -2882,6 +2896,19 @@ footer.page-footer a:hover {
 }
 footer.page-footer .menufooter li {
   padding-top: 0.5rem;
+}
+footer.page-footer .menufooter li a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+@media only screen and (max-width: 992px) {
+  footer.page-footer .menufooter h1 {
+    padding-bottom: 20px;
+  }
+  footer.page-footer .menufooter ul {
+    margin-top: -15px;
+    font-size: 1.2rem;
+  }
 }
 
 table, th, td {
@@ -3340,9 +3367,11 @@ span.badge.new:after {
   font-size: 1em;
   color: #616161;
   font-weight: 300;
+  margin-top: 0;
+  margin-bottom: -0.3rem;
 }
 .breadcrumb a {
-  font-size: 1.1em;
+  font-size: 1.1rem;
   font-weight: 500;
   color: #ffb300;
   text-decoration: underline;
@@ -3362,6 +3391,40 @@ span.badge.new:after {
   font-family: "Arial Black";
   color: #ffb300;
   padding-right: 1rem;
+}
+
+/*-- ICONES SOCIAIS --*/
+.iconessociais span {
+  padding: 0 2%;
+  transition: all .5s;
+  text-decoration: none;
+}
+
+.iconesrodape span {
+  padding: 0 2%;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+.iconessociais a:hover {
+  color: #ffb300;
+  text-decoration: none !important;
+  -webkit-filter: drop-shadow(-1px -1px 1px #000);
+  filter: drop-shadow(-1px -1px 1px #000);
+}
+
+.iconesrodape a:hover {
+  text-decoration: none !important;
+  -webkit-filter: brightness(0.1);
+  filter: brightness(0.1);
+  color: #000000;
+}
+
+/* -- FIM DOS ÍCONES SOCIAIS --*/
+/* -- SHARABLES DAS NOTÍCIAS --*/
+.sharable1 {
+  position: relative;
+  top: -22px;
 }
 
 @font-face {
@@ -6417,6 +6480,9 @@ span.badge.new:after {
 .container.extra-pad-bot {
   padding-bottom: 5rem;
 }
+.container.extrabig-pad-bot {
+  padding-bottom: 5rem;
+}
 .container.extra-pad-top {
   padding-top: 3.5rem;
 }
@@ -6450,10 +6516,13 @@ span.badge.new:after {
   padding-top: 0;
 }
 .section.extra-pad {
-  padding: 3rem;
+  padding: 3.3rem;
 }
 .section.extra-pad-bot {
   padding-bottom: 5rem;
+}
+.section.extrabig-pad-bot {
+  padding-bottom: 9rem;
 }
 .section.extra-pad-top {
   padding-top: 3.5rem;
@@ -6747,6 +6816,10 @@ span.badge.new:after {
   }
 }
 
+.corpo-noticia {
+  margin-top: 1.2rem;
+}
+
 nav {
   color: #fff;
   background-color: #ffc107;
@@ -7016,13 +7089,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 h1 {
   font-size: 2rem;
   line-height: 2.2rem;
-  margin: 1rem 0 0.8rem 0;
+  margin: 1rem 0 1rem 0;
 }
 
 h2 {
   font-size: 2.4rem;
   line-height: 2.64rem;
-  margin: 1.2rem 0 0.96rem 0;
+  margin: 1.2rem 0 1.2rem 0;
 }
 
 h3 {
@@ -7726,8 +7799,8 @@ button.btn-floating {
 }
 
 .btn-full {
-  width: 90%;
-  margin: 5%;
+  width: 80%;
+  margin: 10%;
 }
 .btn-full.large {
   height: 55.5px;
@@ -8780,10 +8853,10 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   outline: none;
   height: 3rem;
   line-height: 3rem;
-  width: 92%;
   float: right;
+  width: 93%;
   font-size: 1rem;
-  margin: 0 0 15px 0;
+  margin-bottom: 15px;
   padding: 0;
   display: block;
 }

@@ -59,17 +59,19 @@
 			        <li class="divider"></li>
 			        <!-- Div do conteúdo na parte inferior do sidenav -->
 			        <div class="menu-bottom">
-						<li> <!-- Redes Sociais -->
-							<a href="#"><img src="img/sociais/ic-facebook.svg" alt=""></a>
-							<a href="#"><img src="img/sociais/ic-twitter.svg" alt=""></a>
-							<a href="#"><img src="img/sociais/ic-google-plus.svg" alt=""></a>
-							<a href="#"><img src="img/sociais/ic-linkedin.svg" alt=""></a>
-						</li>
-						<li class="center"> <!-- Texto da empresa -->
-							<p class="center">2015 © ASAsys Informática<br>
-							contato@asasys.com.br <br>
-							(21) 2464-4444</p>
-						</li>
+						<ul class="iconesrodape">
+							<li> <!-- Redes Sociais -->
+								<a href="#"><img src="img/sociais/ic-facebook.svg" alt=""></a>
+								<a href="#"><img src="img/sociais/ic-twitter.svg" alt=""></a>
+								<a href="#"><img src="img/sociais/ic-google-plus.svg" alt=""></a>
+								<a href="#"><img src="img/sociais/ic-linkedin.svg" alt=""></a>
+							</li>
+							<li class="center"> <!-- Texto da empresa -->
+								<p class="center">2015 © ASAsys Informática<br>
+								contato@asasys.com.br <br>
+								(21) 2464-4444</p>
+							</li>
+						</ul>
 					</div><!-- Fim da div do conteúdo na parte inferior do sidenav -->
 				</ul><!-- Fim do sidenav -->
 
@@ -85,11 +87,12 @@
 		<div class="section no-pad-bot">
 			<!-- Breadcrumb -->
 			<p class="breadcrumb"><a href="index.html">Home</a> » A Empresa </p>
-
-			<h1 class="center">A Empresa</h1>
+			<!-- Conteúdo -->
+			<h2 class="center">A Empresa</h2>
+			<br>
 			<p>Desde 1999 a ASAsys Informática, especializada em Consultoria e Automação Comercial vem se destacando no desenvolvimento de soluções para Drogarias, Perfumarias, Supermercados e Outros. Atualmente a ASAsys está usando as linguagens Cobol (32 bits), Delphi, Visual Basic, C#, PHP, Banco de Dados nativo do Cobol ou SQL-Server. Nossa sede fica em Madureira – RJ e contamos com uma equipe altamente qualificada e treinada para o melhor atendimento das necessidades do cliente. Estamos no mercado há mais de 10 anos com uma lista progressiva de clientes, o que comprova nossa competência e bom serviço. Com isso oferecemos programas seguros e garantimos o sigilo das informações de sua empresa.</p>
 		</div>
-
+		<!-- div para afastamento -->
 		<div class="row">
 			<!-- Coluna afastada -->
 			<div id="texto-empresa" class="col l10 offset-l2 s11 offset-s1">
@@ -102,111 +105,121 @@
 					<h4>Visão:</h4>
 					<p>A ASAsys oferece resoluções rápidas de problemas, com bom suporte e ainda uma flexibilidade para adaptação de novas ferramentas</p>
 			</div> <!-- Fim da coluna afastada -->
-		</div>
+		</div><!-- fim da div de afastamento -->
 		
+		<!-- Botões sociais -->
 		<div class="section no-pad-bot center">
 			<h1>ASAsys nas Redes Sociais</h1>
-        	<ul id="iconessociais">
+        	<ul class="iconessociais">
 				<a href="http://facebook.com"><span><i class="medium ic-facebook"></i></span></a>
-				<span><i class="medium ic-twitter"></i></span>
-				<span><i class="medium ic-google-plus"></i></span>
-				<span><i class="medium ic-linkedin"></i></span>
+				<a href="http://twitter.com"><span><i class="medium ic-twitter"></i></span></a>
+				<a href="http://plus.google.com"><span><i class="medium ic-google-plus"></i></span></a>
+				<a href="http://linkedin.com"><span><i class="medium ic-linkedin"></i></span></a>
 		  	</ul>
-		</div>
+		</div><!-- fim dos botões sociais -->
 
+		<!-- seção para collapsibles -->
 		<div class="section extra-pad-bot">
 			<div class="row">
+				<!-- centralização -->
 				<div class="col s10 offset-s1">
 					<h1 class="center">Oportunidades ASAsys</h1>
+					<!-- Collapsible 1 -->
 					<ul class="collapsible" data-collapsible="accordion">
 					    <li>
+					    	<!-- Título do collapsible 1 -->
 							<div class="collapsible-header grey lighten-3">
 								<i class="mdi-content-add-circle-outline"></i>
 								Trabalhe Conosco
 							</div>
+							<!-- Conteúdo do Collapsible -->
 							<div class="collapsible-body">
-								
 								<h3 class="center">Entre em contato</h3>
-									<p class="center">Quisque fermentum, quam nec malesuada vestibulum, sem leo commodo mauris, eu facilisis ipsum libero quis lorem. Morbi velit risus, volutpat quis commodo ut, gravida eget enim.
-									</p>
+								<p class="center">Quisque fermentum, quam nec malesuada vestibulum, sem leo commodo mauris, eu facilisis ipsum libero quis lorem. Morbi velit risus, volutpat quis commodo ut, gravida eget enim.
+								</p>
 
-									<!-- Campos do formulário -->
-									<form action="" class="col s12">
-										<div class="row">
-									        <div class="input-field col s12">
-									        	<i class="grey-text text-darken-1 mdi-editor-mode-edit prefix"></i>
-									          	<input id="first_name" type="text" class="validate">
-									          	<label for="first_name">Nome</label>
-									        </div>
-									        <div class="input-field col s12">
-									         	<i class="grey-text text-darken-1 mdi-communication-email prefix"></i>       
-									          	<input id="last_name" type="text" class="validate">
-									          	<label for="last_name">Email</label>
-									        </div>
-									      	</div>
-										    <div class="input-field col s12">
-										        <i class="grey-text text-darken-1 mdi-editor-mode-edit prefix"></i>
-										        <textarea id="textarea1" class="materialize-textarea" lenght="600"></textarea>
-										        <label for="textarea1">Mensagem</label>
-									 		</div>
+								<!-- Campos do formulário -->
+								<form action="" class="col s12">
+									<div class="row">
+										<!-- Nome -->
+								        <div class="input-field col s12">
+								        	<i class="grey-text text-darken-1 mdi-editor-mode-edit prefix"></i>
+								          	<input id="first_name" type="text" class="validate">
+								          	<label for="first_name">Nome</label>
+								        </div>
+								        <!-- Email -->
+								        <div class="input-field col s12">
+								         	<i class="grey-text text-darken-1 mdi-communication-email prefix"></i>       
+								          	<input id="last_name" type="text" class="validate">
+								          	<label for="last_name">Email</label>
+								        </div>
+								        <!-- Texto -->
+								      	<div class="input-field col s12">
+									        <i class="grey-text text-darken-1 mdi-editor-mode-edit prefix"></i>
+									        <textarea id="textarea1" class="materialize-textarea" lenght="600"></textarea>
+									        <label for="textarea1">Mensagem</label>
+								 		</div>
 
-										  	<!-- Botão formulário -->
-										  	<button class="btn-full right waves-effect waves-light" type="submit" name="action">Entrar em contato
-										    <i class="mdi-content-send right"></i>
-										  	</button><!--Fim do botão -->
-									</form> <!-- Fim do formulário -->
-								
-							</div>
+									  	<!-- Botão formulário -->
+									  	<button class="btn-full right waves-effect waves-light" type="submit" name="action">Entrar em contato
+									    <i class="mdi-content-send right"></i>
+									  	</button><!--Fim do botão -->
+									</div> <!-- Fim da coluna do formulário -->
+								</form> <!-- Fim do formulário -->
+							</div> <!-- Fim do conteúdo -->
 						</li> 
-					</ul>
-
+					</ul><!-- Fim do Collapsible 1 -->
+					
+					<!-- Collapsible 1 -->
 					<ul class="collapsible" data-collapsible="accordion">
 					    <li>
+					    	<!-- Título do collapsible 2 -->
 							<div class="collapsible-header grey lighten-3">
 								<i class="mdi-content-add-circle-outline"></i>
 								Cadastro de Representantes
 							</div>
+							<!-- Conteúdo do Collapsible -->
 							<div class="collapsible-body">
-								
 								<h3 class="center">Entre em contato</h3>
-									<p class="center">Quisque fermentum, quam nec malesuada vestibulum, sem leo commodo mauris, eu facilisis ipsum libero quis lorem. Morbi velit risus, volutpat quis commodo ut, gravida eget enim.
-									</p>
+								<p class="center">Quisque fermentum, quam nec malesuada vestibulum, sem leo commodo mauris, eu facilisis ipsum libero quis lorem. Morbi velit risus, volutpat quis commodo ut, gravida eget enim.
+								</p>
 
-									<!-- Campos do formulário -->
-									<form action="" class="col s12">
-										<div class="row">
-									        <div class="input-field col s12">
-									        	<i class="grey-text text-darken-1 mdi-editor-mode-edit prefix"></i>
-									          	<input id="first_name" type="text" class="validate">
-									          	<label for="first_name">Nome</label>
-									        </div>
-									        <div class="input-field col s12">
-									         	<i class="grey-text text-darken-1 mdi-communication-email prefix"></i>       
-									          	<input id="last_name" type="text" class="validate">
-									          	<label for="last_name">Email</label>
-									        </div>
-									      	</div>
-										    <div class="input-field col s12">
-										        <i class="grey-text text-darken-1 mdi-editor-mode-edit prefix"></i>
-										        <textarea id="textarea1" class="materialize-textarea" lenght="600"></textarea>
-										        <label for="textarea1">Mensagem</label>
-									 		</div>
+								<!-- Campos do formulário -->
+								<form action="" class="col s12">
+									<div class="row">
+										<!-- Nome -->
+								        <div class="input-field col s12">
+								        	<i class="grey-text text-darken-1 mdi-editor-mode-edit prefix"></i>
+								          	<input id="first_name" type="text" class="validate">
+								          	<label for="first_name">Nome</label>
+								        </div>
+								        <!-- Email -->
+								        <div class="input-field col s12">
+								         	<i class="grey-text text-darken-1 mdi-communication-email prefix"></i>       
+								          	<input id="last_name" type="text" class="validate">
+								          	<label for="last_name">Email</label>
+								        </div>
+								      	<!-- Texto -->
+									    <div class="input-field col s12">
+									        <i class="grey-text text-darken-1 mdi-editor-mode-edit prefix"></i>
+									        <textarea id="textarea1" class="materialize-textarea" lenght="600"></textarea>
+									        <label for="textarea1">Mensagem</label>
+								 		</div>
 
-										  	<!-- Botão formulário -->
-										  	<button class="btn-full right waves-effect waves-light" type="submit" name="action">Entrar em contato
-										    <i class="mdi-content-send right"></i>
-										  	</button><!--Fim do botão -->
-									</form> <!-- Fim do formulário -->
-								
-							</div>
+									  	<!-- Botão formulário -->
+									  	<button class="btn-full right waves-effect waves-light" type="submit" name="action">Entrar em contato
+									    <i class="mdi-content-send right"></i>
+									  	</button><!--Fim do botão -->
+									</div>
+								</form> <!-- Fim do formulário -->
+							</div><!-- Fim do Conteúdo -->
 						</li> 
-					</ul>
-
-				</div>
+					</ul><!-- Fim do Collapsible 2 -->
+				</div> <!-- Fim da centralização -->
 			</div>	
-		</div>
+		</div><!-- Fim da seção dos Collapsibles -->
 
-	</div>
+	</div><!-- Fim do Container geral -->
 	
 
   <!-- container geral do Rodapé -->					
@@ -242,18 +255,18 @@
 			<!-- Coluna das Redes Sociais e PArceiros -->
 	        <div class="col m12 l5">
 				<h1>Redes Sociais</h1>
-	        	<ul id="iconesrodape">
+	        	<ul class="iconesrodape">
 					<a href="http://facebook.com"><span><i class="medium ic-facebook"></i></span></a>
 					<a href="http://twitter.com"><span><i class="medium ic-twitter"></i></span></a>
 					<a href="http://plus.google.com"><span><i class="medium ic-google-plus"></i></span></a>
 					<a href="http://linkedin.com"><span><i class="medium ic-linkedin"></i></span></a>
 	          	</ul>
 	          	<h1>Parceiros</h1>
-	          	<ul class="iconessociais">
-					<img class="btn-sociais" src="img/parceiros/alog-neg-min.png" alt="">
-					<img class="btn-sociais" src="img/parceiros/farmacia-popular-neg-min.png" alt="">
-					<img class="btn-sociais" src="img/parceiros/software-express-neg-min.png" alt="">
-					<img class="btn-sociais" src="img/parceiros/vale-mais-saude-neg-min.png" alt="">
+	          	<ul class="iconesrodape">
+					<a href="#"><img class="btn-sociais" src="img/parceiros/alog-neg-min.png" alt=""></a>
+					<a href="#"><img class="btn-sociais" src="img/parceiros/farmacia-popular-neg-min.png" alt=""></a>
+					<a href="#"><img class="btn-sociais" src="img/parceiros/software-express-neg-min.png" alt=""></a>
+					<a href="#"><img class="btn-sociais" src="img/parceiros/vale-mais-saude-neg-min.png" alt=""></a>
 	          	</ul>
 	          <br> <!-- Break -->
 	          <br> <!-- Break -->

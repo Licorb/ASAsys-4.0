@@ -22,6 +22,10 @@
     padding-bottom: 5rem;
   }
 
+  &.extrabig-pad-bot {
+    padding-bottom: 5rem;
+  }
+
   &.extra-pad-top {
     padding-top: 3.5rem;
   }
@@ -56,11 +60,15 @@
   }
 
   &.extra-pad {
-    padding: 3rem;
+    padding: 3.3rem;
   }
   
   &.extra-pad-bot {
     padding-bottom: 5rem;
+  }
+
+  &.extrabig-pad-bot {
+    padding-bottom: 9rem;
   }
 
   &.extra-pad-top {
@@ -164,4 +172,8 @@
     }
 
   }
+}
+
+.corpo-noticia {
+  margin-top: 1.2rem;
 }

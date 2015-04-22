@@ -97,6 +97,11 @@ ul {
   background-color: color("grey", "lighten-2");
 }
 
+.divider-news {
+  height: 1px;
+  background-color: color("grey", "lighten-2");
+}
+
 //  Blockquote
 
 blockquote {
@@ -142,8 +147,14 @@ video.responsive-video {
 
 
 // Pagination
+.paginacao {
+  float: right;
+  width: 100%;
+  text-align: center;
+}
 
 .pagination {
+  display: inline-block;
 
   li {
     font-size: 1.2rem;
@@ -321,6 +332,22 @@ footer.page-footer {
 
   .menufooter li {
     padding-top:0.5rem;
+
+    & a:hover {
+      text-decoration: none;
+      color:#000000;
+    }
+  }
+
+  @media only screen and (max-width : 992px){
+    .menufooter h1 {
+      padding-bottom: 20px;
+    }
+
+    .menufooter ul {
+      margin-top: -15px;
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -747,9 +774,11 @@ span.badge {
   font-size: 1em;
   color: #616161;
   font-weight: 300;
+  margin-top: 0;
+  margin-bottom: -0.3rem;
 
   a {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-weight: 500;
     color: $secondary-color;
     text-decoration: underline;
@@ -774,4 +803,40 @@ span.badge {
       padding-right: 1rem;
     }
   }
+}
+
+
+/*-- ICONES SOCIAIS --*/
+.iconessociais span{
+  padding: 0 2%;
+  transition: all .5s;
+  text-decoration:none;
+}
+
+.iconesrodape span{
+  padding: 0 2%;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+.iconessociais a:hover{
+  color: $secondary-color;
+  text-decoration: none !important;
+  -webkit-filter: drop-shadow( -1px -1px 1px #000 );
+  filter: drop-shadow( -1px -1px 1px #000 );
+}
+
+.iconesrodape a:hover{
+  text-decoration: none !important;
+  -webkit-filter: brightness(0.1);
+  filter: brightness(0.1);
+  color: #000000;
+}
+
+/* -- FIM DOS ÍCONES SOCIAIS --*/
+
+/* -- SHARABLES DAS NOTÍCIAS --*/
+.sharable1 {
+  position:relative;
+  top: -22px;
 }

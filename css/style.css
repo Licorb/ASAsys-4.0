@@ -55,15 +55,7 @@ footer.page-footer {
 }
 
 /*--- rodapé -- */
-#iconesrodape span{
-  padding: 0 2%;
-  transition: all .5s;
-}
 
-#iconesrodape a:hover {
-  color: #000000;
-  text-decoration: none;
-}
 
 /*--------- cards de avisos ----- */
 .moduloavisos {
@@ -125,7 +117,6 @@ footer.page-footer {
 .content-newscard:hover .newscard-text p {
   text-decoration: underline !important;
 }
-
 
 .newscard-date {
   width: 17%;
@@ -215,27 +206,38 @@ footer.page-footer {
   margin-top: -5px;
 }
 
-#iconessociais span{
-  padding: 0 2%;
-  transition: all 1s;
-}
-
-#iconessociais a:hover{
-  color: #FFB300;
-  text-decoration: none;
-}
-
 /* Google Maps */
 .google-maps {
-        position: relative;
-        padding-bottom: 75%; // This is the aspect ratio
-        height: 0;
-        overflow: hidden;
+        background-color: #FFB300;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        padding-top: 0;
+        height: 470px;
     }
     .google-maps iframe {
-        position: absolute;
-        top: 0;
+        margin-top: 10px;
         left: 0;
         width: 100% !important;
-        height: 100% !important;
+        height: 450px;
     }
+ }
+
+ .corpo-noticia {
+  width: 100%;
+  float: left;
+ }
+
+ .corpo-noticia p{
+  margin-top: -6px;
+ }
+
+ .imagem-destaque {
+  width: 45%;
+  float: left;
+  margin-right: 3%;
+ }
+
+ .imagem-destaque img {
+  width: 100%;
+  vertical-align: top;
+ }

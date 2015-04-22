@@ -553,10 +553,10 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
     outline: none;
     height: 3rem;
     line-height: 3rem;
-    width: 92%;
     float: right;
+    width: 93%;
     font-size: 1rem;
-    margin: 0 0 15px 0;
+    margin-bottom: 15px;
     padding: 0;
     display: block;
   }
