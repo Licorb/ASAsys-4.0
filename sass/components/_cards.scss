@@ -15,7 +15,17 @@
   background-color: $card-bg-color;
   border-radius: 2px;
   @extend .z-depth-1;
+  
+  &.decorate {
+  border-top: 3px solid $secondary-color;
+  border-bottom: 3px solid $secondary-color;
+  }
 
+
+  p {
+    line-height: 1.5rem;
+    padding: 0 1rem;
+  }
 
   .card-title {
     color: #fff;
@@ -103,9 +113,12 @@
   }
 
   .card-content {
-    padding: $card-padding;
+    padding: $card-padding/2;
     border-radius: 0 0 2px 2px;
 
+    & img {
+      width: 100%;
+    }
 
     p {
       margin: 0;
@@ -117,16 +130,17 @@
   }
 
   .card-action {
-    border-top: 1px solid rgba(160,160,160,.2);
+    border-top: 1px solid rgba(160,160,160,.3);
     padding: $card-padding;
 
     a {
       color: color("orange", "accent-2");
       margin-right: $card-padding;
       @include transition(color .3s ease);
+      padding-top:0.5em;
       text-transform: uppercase;
 
-      &:hover { color: lighten(color("orange", "accent-2"), 20%); }
+      &:hover {color: darken(color("orange", "accent-2"), 20%);}
     }
   }
 

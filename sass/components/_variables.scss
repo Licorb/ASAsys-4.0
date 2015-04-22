@@ -1,12 +1,12 @@
 /*** Colors ***/
-$primary-color: color("amber", "darken-1") !default;
+$primary-color: color("amber", "base") !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
-$secondary-color: color("amber", "darken-2") !default;
+$secondary-color: color("amber", "darken-1") !default;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
-$link-color: color("amber", "darken-1") !default;
+$link-color: color("grey", "darken-3") !default;
 
 /*** Badges ***/
 $badge-bg-color: $secondary-color !default;
@@ -26,6 +26,7 @@ $button-line-height: 36px !default;
 /*** Cards ***/
 $card-padding: 20px !default;
 $card-bg-color: #fff !default;
+$card-action-bg: color("grey", "lighten-3") !default;
 
 /*** Collapsible ***/
 $collapsible-height: 3rem !default;
@@ -39,6 +40,7 @@ $dropdown-color: $secondary-color !default;
 /*** Fonts ***/
 $roboto-font-path: "../font/roboto/" !default;
 $icons-font-path: "../font/material-design-icons/" !default;
+$icons-sociais-path: "..font/icones-sociais-asa/" !default;
 
 /*** Forms ***/
 // Text Inputs + Textarea
@@ -117,11 +119,11 @@ $toast-text-color: #fff !default;
 /*** Typography ***/
 $off-black: rgba(0, 0, 0, 0.87) !default;
 // Header Styles
-$h1-fontsize: 4.2rem !default;
-$h2-fontsize: 3.56rem !default;
-$h3-fontsize: 2.92rem !default;
-$h4-fontsize: 2.28rem !default;
-$h5-fontsize: 1.64rem !default;
+$h1-fontsize: 2.0rem !default;
+$h2-fontsize: 2.4rem !default;
+$h3-fontsize: 1.7rem !default;
+$h4-fontsize: 1.4rem !default;
+$h5-fontsize: 1.1rem !default;
 $h6-fontsize: 1rem !default;
 
 // Footer

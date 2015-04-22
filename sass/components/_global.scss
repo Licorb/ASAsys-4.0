@@ -32,6 +32,11 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+iframe {
+  width: 100%;
+  border: 1px solid #cccccc;
+  height: 300px;
+}
 
 // Positioning
 .valign-wrapper {
@@ -86,13 +91,24 @@ ul {
   background-color: color("grey", "lighten-2");
 }
 
+.divider-mobile {
+  height: 1px;
+  overflow: hidden;
+  background-color: color("grey", "lighten-2");
+}
+
+.divider-news {
+  height: 1px;
+  background-color: color("grey", "lighten-2");
+}
 
 //  Blockquote
 
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
-  border-left: 5px solid color("red", "lighten-3");
+  text-align:right;
+  border-left: 5px solid color("amber", "darken-2");
 }
 
 // Icon Styles
@@ -131,15 +147,21 @@ video.responsive-video {
 
 
 // Pagination
+.paginacao {
+  float: right;
+  width: 100%;
+  text-align: center;
+}
 
 .pagination {
+  display: inline-block;
 
   li {
     font-size: 1.2rem;
     float: left;
     width: 30px;
     height: 30px;
-    margin: 0 10px;
+    margin: 40px 10px;
     border-radius: 2px;
     text-align: center;
 
@@ -293,15 +315,39 @@ ul.staggered-list li {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: $footer-bg-color;
+  background-color: $secondary-color;
 
   .footer-copyright {
     overflow: hidden;
     height: 50px;
     line-height: 50px;
-    color: rgba(255,255,255,.8);
-    background-color: rgba(51,51,51,.08);;
+    color: $link-color;
+    background-color: $primary-color;
     @extend .light;
+  }
+
+  & a:hover {
+    text-decoration: underline;
+  }
+
+  .menufooter li {
+    padding-top:0.5rem;
+
+    & a:hover {
+      text-decoration: none;
+      color:#000000;
+    }
+  }
+
+  @media only screen and (max-width : 992px){
+    .menufooter h1 {
+      padding-bottom: 20px;
+    }
+
+    .menufooter ul {
+      margin-top: -15px;
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -701,6 +747,96 @@ span.badge {
 ------Ajustes------
 ******************/
 
+
 .btn-sociais {
-  height: 20px;
+  width: 5.2rem;
+  padding: 1rem 0.5rem;
+}
+
+.faixaclientes img{
+  width: 60%;
+}
+
+.produto-faixa img {
+  width: 50%;
+  margin-top: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.produto-faixa h4 {
+  margin-top: -3px;
+}
+
+.breadcrumb {
+  font-size: 1em;
+  color: #616161;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: -0.3rem;
+
+  a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: $secondary-color;
+    text-decoration: underline;
+  }
+}
+
+.list-style {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem;
+  }
+
+  li {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+
+    &:before {
+      content: "■  ";
+      font-family: "Arial Black";
+      color: $secondary-color;
+      padding-right: 1rem;
+    }
+  }
+}
+
+
+/*-- ICONES SOCIAIS --*/
+.iconessociais span{
+  padding: 0 2%;
+  transition: all .5s;
+  text-decoration:none;
+}
+
+.iconesrodape span{
+  padding: 0 2%;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+.iconessociais a:hover{
+  color: $secondary-color;
+  text-decoration: none !important;
+  -webkit-filter: drop-shadow( -1px -1px 1px #000 );
+  filter: drop-shadow( -1px -1px 1px #000 );
+}
+
+.iconesrodape a:hover{
+  text-decoration: none !important;
+  -webkit-filter: brightness(0.1);
+  filter: brightness(0.1);
+  color: #000000;
+}
+
+/* -- FIM DOS ÍCONES SOCIAIS --*/
+
+/* -- SHARABLES DAS NOTÍCIAS --*/
+.sharable1 {
+  position:relative;
+  top: -22px;
 }
