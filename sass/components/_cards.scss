@@ -162,3 +162,38 @@
 
   }
 }
+
+/* -------- CARD ALERTA ------ */
+.alerta {
+  border-radius:3px;
+  padding:10px 10px 10px 30px;
+  margin:10px;
+  line-height: 1.4rem;
+  background: lighten(color("red", "lighten-3"), 20%);
+  border: 1px solid color("red", "lighten-3");
+  @extend .z-depth-1;
+  
+  .close {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    float: left;
+    font-size: 1.4rem;
+    text-shadow: 0 1px 0 #000000;
+    filter: alpha(opacity=70);
+    -khtml-opacity: 0.7;
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .texto {
+    color: color("red", "darken-2");
+    line-height: 1.4rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-left: 30px;
+  }
+}
