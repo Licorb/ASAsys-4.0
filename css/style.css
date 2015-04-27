@@ -248,3 +248,43 @@ footer.page-footer {
   width: 100%;
   margin-bottom: 3rem;
  }
+ 
+ /* -- Módulo de vídeos assistidos recentemente --*/
+ .modulovideos {
+  width: 100%;
+  float: left;
+  padding: 1rem;
+  position: relative;
+ }
+
+ .modulovideos-img {
+  width: 30%;
+  padding: 2px;
+  float: left;
+ }  
+
+ .modulovideos-img img {
+  width: 100%;
+ }
+
+ .modulovideos-cont {
+  width: 70%;
+  float: left;
+ }
+
+ .modulovideos-cont h4 {
+  position: absolute;
+  top: -5px;
+  margin-left: 15px;
+ }
+
+ .modulovideos-cont p{
+  position: absolute;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  top: 30px;
+ }
+
+ .ouvidoria {
+  width: 100%;
+}
