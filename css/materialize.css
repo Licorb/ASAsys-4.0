@@ -6643,7 +6643,7 @@ span.badge.new:after {
 .row .col.offset-s12 {
   margin-left: 100%;
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (max-width: 992px) {
   .row .col.m1 {
     width: 8.33333%;
     margin-left: 0;
@@ -7922,6 +7922,11 @@ button.btn-floating {
 .btn-full.large i {
   line-height: 55.5px;
   font-size: 2rem;
+}
+.btn-full.no-pad {
+  margin: 0;
+  width: 100%;
+  padding: 0 1rem;
 }
 
 .dropdown-button {

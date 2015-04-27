@@ -176,4 +176,10 @@ button.btn-floating {
       line-height: $button-floating-size * 1.5;
       font-size: 2rem;    }
   }
+
+  &.no-pad {
+    margin: 0;
+    width: 100%;
+    padding: 0 1rem;
+  }
 }

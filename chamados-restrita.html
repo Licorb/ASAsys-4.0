@@ -40,7 +40,7 @@
 		      	<ul class="right hide-on-med-and-down">
 	        			<!-- Botão -->
 						<div class="call-button">
-				        	<a href="index.html" class="right waves-effect waves-light btn amber darken-1">SAIR</a>
+				        	<a href="index.html" class="right waves-effect waves-light btn amber darken-1 grey-text text-darken-3">SAIR</a>
 				        </div><!--Fim do botão -->
 			    </ul>
 
@@ -204,26 +204,5 @@
   <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
 
   <!-- Run dos scripts -->
-  <script type="text/javascript">
-	$(window).on("scroll touchmove", function () {
-	$('#navigation, #navigationfix').toggleClass('collapse', $(document).scrollTop() > 0);
-	});
-
-	$(document).ready(function() {
-		/* ---------------- slider dos avisos -- */
-		$('.moduloavisos').slick({
-			dots: true,
-			arrows: false,
-			draggable: false,
-		});
-	});
-
-    $('.close').click(
-    	function(){
-    		$(this).closest('.alerta').fadeOut(300);
-    });
-
-    </script>
-
   </body>
 </html>
