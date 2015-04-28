@@ -7455,6 +7455,7 @@ small {
   margin: 0.5rem 0 1rem 0;
   background-color: #fff;
   border-radius: 2px;
+  width: 100%;
 }
 .card.decorate {
   border-top: 3px solid #ffb300;
@@ -7914,6 +7915,9 @@ button.btn-floating {
   width: 80%;
   margin: 10%;
 }
+.btn-full.truefull {
+  width: 100%;
+}
 .btn-full.large {
   height: 55.5px;
   line-height: 55.5px;
@@ -7925,8 +7929,12 @@ button.btn-floating {
 }
 .btn-full.no-pad {
   margin: 0;
+  margin-bottom: 2.5rem;
   width: 100%;
   padding: 0 1rem;
+}
+.btn-full.extra-pad {
+  margin: 20%;
 }
 
 .dropdown-button {

@@ -242,13 +242,6 @@ footer.page-footer {
   vertical-align: top;
  }
 
- /* --- Botões Downloads --*/
- .botao-download {
-  float: left;
-  width: 100%;
-  margin-bottom: 3rem;
- }
- 
  /* -- Módulo de vídeos assistidos recentemente --*/
  .modulovideos {
   width: 100%;

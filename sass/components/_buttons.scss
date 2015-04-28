@@ -168,6 +168,10 @@ button.btn-floating {
   width: 80%;
   margin: 10%;
 
+  &.truefull {
+    width: 100%;
+  }
+
   &.large {
     height: $button-floating-size * 1.5;
     line-height: $button-floating-size * 1.5;
@@ -179,7 +183,12 @@ button.btn-floating {
 
   &.no-pad {
     margin: 0;
+    margin-bottom: 2.5rem;
     width: 100%;
     padding: 0 1rem;
+  }
+
+  &.extra-pad {
+    margin:20%;
   }
 }
