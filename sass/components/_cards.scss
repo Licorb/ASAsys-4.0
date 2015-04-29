@@ -132,7 +132,7 @@
 
   .card-action {
     border-top: 1px solid rgba(160,160,160,.3);
-    padding: $card-padding;
+    padding: 14px 20px;
 
     a {
       color: color("orange", "accent-2");
@@ -140,8 +140,13 @@
       @include transition(color .3s ease);
       padding-top:0.5em;
       text-transform: uppercase;
+      font-weight: bold;
 
       &:hover {color: darken(color("orange", "accent-2"), 20%);}
+    }
+
+    &:hover {
+      background-color: color("grey", "lighten-4");
     }
   }
 
