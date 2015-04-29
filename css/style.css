@@ -279,6 +279,11 @@ footer.page-footer {
   top: 30px;
  }
 
+ .modulovideos-cont .caption {
+  position: absolute;
+  top: 65px;
+ }
+
  .ouvidoria {
   width: 100%;
 }
