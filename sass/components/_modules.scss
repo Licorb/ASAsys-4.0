@@ -1,0 +1,91 @@
+// Módulo para Avisos
+.caixa-aviso {
+	position: relative;
+	float: left;
+	margin-top: 1rem;
+	margin-bottom: 3.5rem;
+
+	.imagem-aviso {
+		max-width: 35%;
+		float: left;
+
+		& img {
+			width: 100%;
+		}	
+	}
+
+	.conteudo-aviso {
+		width: 63%;
+		padding-left: 2%;
+		float: left;
+
+		& h1 {
+			margin-top: 0px;
+		}
+
+		& .caption {
+			margin-top: -15px;
+		}
+
+		& .chamada {
+			line-height: 1.5rem;
+		}
+	}
+}
+
+// Módulo para Notícias 
+.caixa-noticia {
+	position: relative;
+	float: right;
+	margin:1rem 0;
+	width: 99%;
+
+	.data-noticia {
+		width: 17%;
+		float: left;
+		padding-right: 2%;
+
+		& p {
+			line-height: 1.2rem;
+			font-size: 1.1rem;
+			text-align: right;
+			font-weight:300;
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	.conteudo-noticia {
+
+		.imagem-noticia {
+			width: 23%;
+			float: left;
+
+			& img {
+				width: 100%;
+				vertical-align: text-top;
+				-webkit-transition: .3s all;
+			}
+		}
+
+		.chamada {
+			float: left;
+			width: 58%;
+			padding-left: 2%;
+
+			p {
+				line-height: 1.3rem;
+				margin-top: -2px;
+			}
+		}
+
+		&:hover p{
+			text-decoration: underline;
+		}
+
+		&:hover img{
+			outline: 0.15rem solid color("grey", "darken-2");
+			-webkit-filter: brightness(80%);
+		}
+	}
+}
