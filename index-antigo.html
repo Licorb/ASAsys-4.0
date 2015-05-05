@@ -175,13 +175,13 @@
 		    		<!-- Módulo de avisos -->
 			    	<div class="col-slick m12 l7">
 			    		<h2>Avisos</h2>
-						<div id="moduloavisos">
+						
 						 <!-- Caixa de avisos -->
-					        <div class="caixa-aviso">
-					        	<div class="imagem-aviso">
+					        <div class="noticecard">
+					        	<div class="noticecard-image">
 					        		<img src="img/nfe-aviso.png" alt="">
 					        	</div>
-					        	<div class="conteudo-aviso">
+					        	<div class="noticecard-content">
 						        	<h1>NF-e Informação Importante</h1>
 						        	<p class="caption">06 de Abril de 2015</p>
 						        	<p class="chamada">Clientes obrigados à emissão de NF-e devem ter o ASAsys atualizado com a última versão (5.0.0) disponibilizada no dia 31/03/2015. </p>
@@ -193,11 +193,11 @@
 						        </div>
 					        </div><!-- Fim da caixa de avisos -->
 					        <!-- Caixa de avisos -->
-					        <div class="caixa-aviso">
-					        	<div class="imagem-aviso">
+					        <div class="noticecard">
+					        	<div class="noticecard-image">
 					        		<img src="img/nfe-aviso.png" alt="">
 					        	</div>
-					        	<div class="conteudo-aviso">
+					        	<div class="noticecard-content">
 						        	<h1>NF-e Informação Importante</h1>
 						        	<p class="caption">06 de Abril de 2015</p>
 						        	<p class="chamada">Clientes obrigados à emissão de NF-e devem ter o ASAsys atualizado com a última versão (5.0.0) disponibilizada no dia 31/03/2015. </p>
@@ -208,7 +208,7 @@
 						        	</div><!--Fim do botão -->
 						        </div>
 					        </div><!-- Fim da caixa de avisos -->
-						</div>
+						
 				    </div> <!-- Fim do módulo de avisos -->
 
 					<!-- Módulo de notícias -->
@@ -216,60 +216,60 @@
 				    	<h2>Notícias</h2>
 
 				    	<!-- Caixa de notícia única -->
-			    		<div class="caixa-noticia">
-			    			
-			    				<div class="data-noticia"> 
-			    					<p>07/04</p>
+			    		<div class="newscard-wrap">
+			    			<div class="newscard">
+			    				<div class="newscard-date">
+			    					<p class="caption">07/04</p>
 			    				</div>
-			    				<div class="conteudo-noticia">
+			    				<div class="content-newscard">
 				    				<a href="#">
-					    				<div class="imagem-noticia">
+					    				<div id="imgnews" class="newscard-image">
 					    					<img src="img/noticia03.jpg" alt="">
 					    				</div>
-					    				<div class="chamada">texto
-					    					<p>We are a team of college students working on this</p>
+					    				<div class="newscard-text">
+					    					<p id="linknews">We are a team of college students working on this</p>
 					    				</div>
 				    				</a>
 			    				</div>
-			    			
+			    			</div>
 			    		</div><!-- Fim da caixa de notícia única -->
 
 			    		<!-- Caixa de notícia única -->
-			    		<div class="caixa-noticia">
-			    			
-			    				<div class="data-noticia">
-			    					<p>06/04</p>
+			    		<div class="newscard-wrap">
+			    			<div class="newscard">
+			    				<div class="newscard-date">
+			    					<p class="caption">06/04</p>
 			    				</div>
-			    				<div class="conteudo-noticia">
+			    				<div class="content-newscard">
 				    				<a href="#">
-					    				<div class="imagem-noticia">
+					    				<div id="imgnews" class="newscard-image">
 					    					<img src="img/noticia02.jpg" alt="">
 					    				</div>
-					    				<div class="chamada">
-					    					<p>We are able to create framework also always open to feedbacks</p>
+					    				<div class="newscard-text">
+					    					<p id="linknews">We are able to create framework also always open to feedbacks</p>
 					    				</div>
 				    				</a>
 				    			</div>
-			    			
+			    			</div>
 			    		</div><!-- Fim da caixa de notícia única -->
 
 						<!-- Caixa de notícia única -->
-			    		<div class="caixa-noticia">
-			    			
-			    				<div class="data-noticia">
-			    					<p>01/04</p>
+			    		<div class="newscard-wrap">
+			    			<div class="newscard">
+			    				<div class="newscard-date">
+			    					<p class="caption">01/04</p>
 			    				</div>
-			    				<div class="conteudo-noticia">
+			    				<div class="content-newscard">
 				    				<a href="#">
-					    				<div class="imagem-noticia">
+					    				<div id="imgnews" class="newscard-image">
 					    					<img src="img/noticia04.jpg" alt="">
 					    				</div>
-					    				<div class="chamada">
-					    					<p>By utilizing elements and principles of Material Design, we were able to create...</p>
+					    				<div class="newscard-text">
+					    					<p id="linknews">By utilizing elements and principles of Material Design, we were able to create...</p>
 					    				</div>
 				    				</a>
 			    				</div>
-			    			
+			    			</div>
 			    		</div><!-- Fim da caixa de notícia única -->
 				    </div><!-- Fim do Módulo de Notícias -->
 
@@ -464,7 +464,7 @@
 		});
 
        	/* ---------------- slider dos avisos -- */
-		$('#moduloavisos').slick({
+		$('.moduloavisos').slick({
 			dots: true,
 			arrows: false,
 			draggable: false,

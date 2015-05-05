@@ -28,13 +28,27 @@
     padding: 0 1rem;
   }
 
+  .nomecliente {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: color("amber", "darken-2");
+    font-weight: 600;
+  }
+
   .card-title {
     color: #fff;
-    font-size: 24px;
+    font-size: 1.1rem;
     font-weight: 300;
     &.activator {
       cursor: pointer;
     }
+  }
+
+  .titulo {
+    padding: 0 1rem;
+    font-weight: 300px;
+    font-size: 1.4rem;
+    color: color("grey", "darken-2");
   }
 
   // Card Sizes
@@ -114,8 +128,10 @@
   }
 
   .card-content {
+    border-top: 1px solid rgba(160,160,160,.3);
     padding: $card-padding/2;
     border-radius: 0 0 2px 2px;
+    background-color: color("grey", "lighten-4");
 
     & img {
       width: 100%;
@@ -126,7 +142,7 @@
       color: inherit;
     }
     .card-title {
-      line-height: 48px;
+      line-height: 30px;
     }
   }
 
@@ -159,13 +175,35 @@
     top: 100%;
     height: 100%;
     z-index: 1;
-    display: none;
 
     .card-title {
       cursor: pointer;
       display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
     }
 
+    p {
+        padding: 0;
+        padding-bottom: 1rem;
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        color: ("grey", "lighten-1");
+      }  
+
+    .infos {
+      
+      a {
+      padding: 0.5rem 0;
+      display: block;
+      font-size: 1rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }
 

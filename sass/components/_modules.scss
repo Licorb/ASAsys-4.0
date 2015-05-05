@@ -89,3 +89,124 @@
 		}
 	}
 }
+
+// Módulo para Produtos
+.caixa-produto {
+	float: left;
+	width: 90%;
+	margin: 3rem 0;
+
+	.imagem-produto {
+		float: left;
+		width: 24%;
+
+		& img {
+			width: 100%;
+			float: left;
+		}
+	}
+
+	.conteudo-produto {
+		float: left;
+		margin-left: 2%;
+		width: 74%;
+		margin-top: -15px;
+
+		& p {
+			line-height: 1.4rem;
+		}
+	}
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+// Módulo do corpo da notícia interna
+.noticia-corpo {
+	width: 100%;
+	float: left;
+
+	& p{
+		margin-top: -19px;
+	}
+
+	.imagem-destaque {
+		width: 45%;
+		float: left;
+		margin-right: 3%;
+		margin-top: -10px;
+		& img {
+			width: 100%;
+			vertical-align: top;
+		}
+	}
+}
+
+// Módulo dos vídeos
+.caixa-video {
+	width: 100%;
+	float: left;
+	padding: 1rem;
+	position: relative;
+	height: 170px;
+
+	&.sidebar {
+		height: auto;
+		max-height: 170px;
+		margin-bottom: 2rem;
+	}
+
+	@media #{$small-and-down} {
+		height: auto;
+		min-height: 100px;
+	}
+
+	.imagem-video {
+		width: 28%;
+		float: left;
+
+		& img {
+			width: 100%;
+			@include transition(.2s ease-out);
+			cursor: pointer;
+			max-height: 110px;
+
+		  	&:hover {
+		    	@extend .z-depth-1-half;
+  			}
+		}
+	}
+
+	.conteudo-video {
+		width: 69%;
+		padding-left:3%;
+		float: left;
+
+		.titulo {
+			position: absolute;
+			top: 2px;
+			font-size: 1.4rem;
+			font-weight: 400;
+			padding-left: 0;
+		}
+
+		p {
+			padding-left: 0;
+			padding-top: 0.7rem;
+		}
+
+		.tempo {
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+			font-size: 0.9rem;
+			line-height: 1.8rem;
+			height: 1.8rem;
+			padding: 0 1rem;
+			background-color: color("grey", "lighten-2");
+		}
+	}
+}

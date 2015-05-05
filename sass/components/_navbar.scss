@@ -84,22 +84,21 @@ nav {
   // Navbar Links
   ul {
     margin: 0;
+    color: color("grey", "darken-3");
 
     li {
       @include transition(background-color .3s);
       float: left;
       padding: 0;
-
-      &:hover, &.active {
-        background-color: rgba(0,0,0,.1);
+      &:hover a{
+        color: #000;
       }
     }
     a {
       font-size: 1rem;
-      color: #fff;
       display: block;
       padding: 0 15px;
-
+      font-weight: 400;
       @media only screen and (min-width:993px) and (max-width: 1160px) {
         padding:0 9px;
         font-size: 0.9rem;
@@ -221,9 +220,6 @@ nav {
   padding: 0px;
 }
 
-.nav-sup ul li:hover, nav ul li.active {
-    background-color: rgba(0, 0, 0, 0.1);
-}
 
 .nav-sup ul a {
   font-size: 1rem;
@@ -272,7 +268,7 @@ nav {
 }
 
 .nav-inf ul li:hover, nav ul li.active {
-    background-color: rgba(0, 0, 0, 0.1);
+     box-shadow: 0 1px transparent inset,0 -3px color("grey", "darken-2") inset, -1px 0 transparent inset, 1px 0 transparent inset;
 }
 
 .nav-inf ul a {
