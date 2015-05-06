@@ -33,7 +33,7 @@ nav {
     i {
       font-size: 2.7rem;
       height: $navbar-height-mobile;
-      line-height: $navbar-height-mobile;
+      line-height: $navbar-height-mobile + 4px;
       color: #424242;
     }
   }
@@ -194,6 +194,7 @@ nav {
   }
 }
 
+// Navbar superior
 .nav-sup {
   font-size: 1rem;
   height: 20px;
@@ -219,7 +220,6 @@ nav {
   float: left;
   padding: 0px;
 }
-
 
 .nav-sup ul a {
   font-size: 1rem;
@@ -268,7 +268,7 @@ nav {
 }
 
 .nav-inf ul li:hover, nav ul li.active {
-     box-shadow: 0 1px transparent inset,0 -3px color("grey", "darken-2") inset, -1px 0 transparent inset, 1px 0 transparent inset;
+  box-shadow: 0 1px transparent inset,0 -3px color("grey", "darken-2") inset, -1px 0 transparent inset, 1px 0 transparent inset;
 }
 
 .nav-inf ul a {

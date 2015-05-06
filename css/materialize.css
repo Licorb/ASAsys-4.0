@@ -2669,11 +2669,14 @@ ul li {
 
 .divider-mobile {
   height: 1px;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
   overflow: hidden;
   background-color: #e0e0e0;
 }
 
 .divider-news {
+  position: relative;
   height: 1px;
   background-color: #e0e0e0;
 }
@@ -2881,13 +2884,12 @@ ul.staggered-list li {
 
 footer.page-footer {
   margin-top: 20px;
-  padding-top: 20px;
+  padding-top: 30px;
   background-color: #ffb300;
 }
 footer.page-footer .footer-copyright {
-  overflow: hidden;
-  height: 50px;
-  line-height: 50px;
+  height: 30px;
+  line-height: 30px;
   color: #424242;
   background-color: #ffc107;
 }
@@ -3342,11 +3344,6 @@ span.badge.new:after {
 /******************
 ------Ajustes------
 ******************/
-.btn-sociais {
-  width: 5.2rem;
-  padding: 1rem 0.5rem;
-}
-
 .faixaclientes img {
   width: 60%;
 }
@@ -3358,7 +3355,6 @@ span.badge.new:after {
   margin-left: auto;
   margin-right: auto;
 }
-
 .produto-faixa h4 {
   margin-top: -3px;
 }
@@ -3368,13 +3364,25 @@ span.badge.new:after {
   color: #616161;
   font-weight: 300;
   margin-top: 0;
-  margin-bottom: -0.3rem;
+  margin-bottom: -0.2rem;
+}
+@media only screen and (max-width: 992px) {
+  .breadcrumb {
+    font-size: 1.2rem;
+    margin-top: -1.3rem;
+    margin-bottom: 1.5rem;
+  }
 }
 .breadcrumb a {
   font-size: 1.1rem;
   font-weight: 500;
   color: #ffb300;
   text-decoration: underline;
+}
+@media only screen and (max-width: 992px) {
+  .breadcrumb a {
+    font-size: 1.3rem;
+  }
 }
 
 .list-style ul {
@@ -3399,13 +3407,6 @@ span.badge.new:after {
   transition: all .5s;
   text-decoration: none;
 }
-
-.iconesrodape span {
-  padding: 0 2%;
-  text-decoration: none;
-  transition: all .5s;
-}
-
 .iconessociais a:hover {
   color: #ffb300;
   text-decoration: none !important;
@@ -3413,6 +3414,15 @@ span.badge.new:after {
   filter: drop-shadow(-1px -1px 1px #000);
 }
 
+.iconesrodape span {
+  padding: 0 2%;
+  text-decoration: none;
+  transition: all .5s;
+}
+.iconesrodape .btn-sociais {
+  width: 5.2rem;
+  padding: 1rem 0.5rem;
+}
 .iconesrodape a:hover {
   text-decoration: none !important;
   -webkit-filter: brightness(0.1);
@@ -3420,7 +3430,6 @@ span.badge.new:after {
   color: #000000;
 }
 
-/* -- FIM DOS ÍCONES SOCIAIS --*/
 /* -- SHARABLES DAS NOTÍCIAS --*/
 .sharable {
   position: relative;
@@ -6558,6 +6567,9 @@ span.badge.new:after {
   margin-left: auto;
   margin-right: auto;
 }
+.row.pad-top {
+  padding-top: 2rem;
+}
 .row:after {
   content: "";
   display: table;
@@ -7126,7 +7138,7 @@ nav .button-collapse {
 nav .button-collapse i {
   font-size: 2.7rem;
   height: 56px;
-  line-height: 56px;
+  line-height: 60px;
   color: #424242;
 }
 nav .call-button {
@@ -7871,15 +7883,22 @@ small {
   font-weight: 600;
   text-transform: uppercase;
 }
+.card .card-reveal .card-title i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
 .card .card-reveal p {
   padding: 0;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   font-size: 0.9rem;
   line-height: 1.2rem;
   color: "grey", "lighten-1";
 }
 .card .card-reveal .infos a {
-  padding: 0.5rem 0;
+  padding: 0.1rem 0;
   display: block;
   font-size: 1rem;
 }
@@ -7895,6 +7914,7 @@ small {
   line-height: 1.4rem;
   background: #fdf2f2;
   border: 1px solid #EF9A9A;
+  transition: all .5s;
 }
 .alerta .close {
   font-family: Arial, sans-serif;
@@ -7909,6 +7929,7 @@ small {
 }
 .alerta .close:hover {
   cursor: pointer;
+  color: #000;
 }
 .alerta .texto {
   color: #D32F2F;
@@ -8155,9 +8176,14 @@ small {
   width: 90%;
   margin: 3rem 0;
 }
+@media only screen and (max-width: 992px) {
+  .caixa-produto {
+    width: 100%;
+  }
+}
 .caixa-produto .imagem-produto {
   float: left;
-  width: 24%;
+  width: 23%;
 }
 .caixa-produto .imagem-produto img {
   width: 100%;
@@ -8165,9 +8191,9 @@ small {
 }
 .caixa-produto .conteudo-produto {
   float: left;
-  margin-left: 2%;
+  margin-left: 3%;
   width: 74%;
-  margin-top: -15px;
+  margin-top: -5px;
 }
 .caixa-produto .conteudo-produto p {
   line-height: 1.4rem;
@@ -8405,7 +8431,13 @@ button.btn-floating {
 
 .btn-full {
   width: 80%;
-  margin: 10%;
+  margin: 5% 10%;
+}
+@media only screen and (max-width: 992px) {
+  .btn-full {
+    margin: 5%;
+    width: 90%;
+  }
 }
 .btn-full.truefull {
   width: 100%;
@@ -8413,11 +8445,16 @@ button.btn-floating {
 .btn-full.large {
   height: 55.5px;
   line-height: 55.5px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .btn-full.large i {
   line-height: 55.5px;
-  font-size: 2rem;
+  font-size: 1.6rem;
+}
+@media only screen and (max-width: 992px) {
+  .btn-full.large {
+    font-size: 1.2rem;
+  }
 }
 .btn-full.no-pad {
   margin: 0;
@@ -9469,12 +9506,26 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   outline: none;
   height: 3rem;
   line-height: 3rem;
-  float: right;
-  width: 93%;
+  float: left;
+  width: 92%;
+  width: calc(100% - 3rem);
+  margin-left: 3rem;
   font-size: 1rem;
   margin-bottom: 15px;
   padding: 0;
   display: block;
+}
+@media only screen and (max-width: 992px) {
+  .select-wrapper input.select-dropdown {
+    width: 86%;
+    width: calc(100% - 3rem);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .select-wrapper input.select-dropdown {
+    width: 80%;
+    width: calc(100% - 3rem);
+  }
 }
 .select-wrapper .mdi-navigation-arrow-drop-down {
   color: initial;
@@ -9797,6 +9848,7 @@ select {
 }
 .side-nav li:hover, .side-nav li.active {
   background-color: #ddd;
+  box-shadow: none;
 }
 .side-nav a {
   color: #444;

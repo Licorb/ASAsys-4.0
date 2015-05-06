@@ -182,11 +182,19 @@
       font-size: 0.9rem;
       font-weight: 600;
       text-transform: uppercase;
+
+      i {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-weight: 800;
+        font-size: 1.1rem;
+      }
     }
 
     p {
         padding: 0;
-        padding-bottom: 1rem;
+        padding-bottom: 0.5rem;
         font-size: 0.9rem;
         line-height: 1.2rem;
         color: ("grey", "lighten-1");
@@ -195,7 +203,7 @@
     .infos {
       
       a {
-      padding: 0.5rem 0;
+      padding: 0.1rem 0;
       display: block;
       font-size: 1rem;
 
@@ -216,6 +224,7 @@
   background: lighten(color("red", "lighten-3"), 20%);
   border: 1px solid color("red", "lighten-3");
   @extend .z-depth-1;
+  transition: all .5s;
   
   .close {
     font-family: Arial, sans-serif;
@@ -230,6 +239,7 @@
 
     &:hover {
       cursor: pointer;
+      color: #000;
     }
   }
 

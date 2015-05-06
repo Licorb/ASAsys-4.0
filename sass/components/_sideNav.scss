@@ -30,7 +30,7 @@
   li {
     float: none;
     padding: 0 15px;
-    &:hover, &.active { background-color: #ddd; }
+    &:hover, &.active { background-color: #ddd; box-shadow:none;}
   }
   a {
     color: #444;

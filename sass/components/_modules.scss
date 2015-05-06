@@ -96,9 +96,13 @@
 	width: 90%;
 	margin: 3rem 0;
 
+	@media #{$medium-and-down} {
+		width: 100%;
+	}
+
 	.imagem-produto {
 		float: left;
-		width: 24%;
+		width: 23%;
 
 		& img {
 			width: 100%;
@@ -108,9 +112,9 @@
 
 	.conteudo-produto {
 		float: left;
-		margin-left: 2%;
+		margin-left: 3%;
 		width: 74%;
-		margin-top: -15px;
+		margin-top: -5px;
 
 		& p {
 			line-height: 1.4rem;

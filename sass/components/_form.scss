@@ -546,20 +546,34 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   input.select-dropdown {
     position: relative;
     cursor: pointer;
-    // color: #444;
+    //color: #444;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid $input-border-color;
     outline: none;
     height: 3rem;
     line-height: 3rem;
-    float: right;
-    width: 93%;
+    float: left;
+    width: 92%;
+    width: calc(100% - 3rem);
+    margin-left: 3rem;
     font-size: 1rem;
     margin-bottom: 15px;
     padding: 0;
     display: block;
+
+    @media #{$medium-and-down} {
+        width: 86%;
+        width: calc(100% - 3rem);
+    }
+
+    @media #{$small-and-down} {
+        width: 80%;
+        width: calc(100% - 3rem);
+    }
   }
+
+  
   .mdi-navigation-arrow-drop-down {
       color: initial;
       position: absolute;

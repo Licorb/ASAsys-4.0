@@ -93,11 +93,14 @@ ul {
 
 .divider-mobile {
   height: 1px;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
   overflow: hidden;
   background-color: color("grey", "lighten-2");
 }
 
 .divider-news {
+  position: relative;
   height: 1px;
   background-color: color("grey", "lighten-2");
 }
@@ -314,13 +317,12 @@ ul.staggered-list li {
 // Footer
 footer.page-footer {
   margin-top: 20px;
-  padding-top: 20px;
+  padding-top: 30px;
   background-color: $secondary-color;
 
   .footer-copyright {
-    overflow: hidden;
-    height: 50px;
-    line-height: 50px;
+    height: 30px;
+    line-height: 30px;
     color: $link-color;
     background-color: $primary-color;
     @extend .light;
@@ -747,44 +749,52 @@ span.badge {
 ------Ajustes------
 ******************/
 
-
-.btn-sociais {
-  width: 5.2rem;
-  padding: 1rem 0.5rem;
-}
-
+// Faixa do slider de clientes 
 .faixaclientes img{
   width: 60%;
 }
+// Faixa do slider de produtos
+.produto-faixa {
+  img {
+    width: 50%;
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.produto-faixa img {
-  width: 50%;
-  margin-top: 1rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
+  h4 {
+    margin-top: -3px;
+  }
 }
 
-.produto-faixa h4 {
-  margin-top: -3px;
-}
-
+// Breadcrumb de navegação 
 .breadcrumb {
   font-size: 1em;
   color: #616161;
   font-weight: 300;
   margin-top: 0;
-  margin-bottom: -0.3rem;
+  margin-bottom: -0.2rem;
+
+  @media #{$medium-and-down}{
+    font-size: 1.2rem;
+    margin-top: -1.3rem;
+    margin-bottom: 1.5rem;
+  }
 
   a {
     font-size: 1.1rem;
     font-weight: 500;
     color: $secondary-color;
     text-decoration: underline;
+  
+    @media #{$medium-and-down}{
+      font-size: 1.3rem;
+    }
   }
 }
 
+// List Style do collapsible
 .list-style {
   ul {
     list-style: none;
@@ -807,33 +817,41 @@ span.badge {
 
 
 /*-- ICONES SOCIAIS --*/
-.iconessociais span{
-  padding: 0 2%;
-  transition: all .5s;
-  text-decoration:none;
+.iconessociais {
+  span{
+    padding: 0 2%;
+    transition: all .5s;
+    text-decoration:none;
+  }
+
+  a:hover {
+    color: $secondary-color;
+    text-decoration: none !important;
+    -webkit-filter: drop-shadow( -1px -1px 1px #000 );
+    filter: drop-shadow( -1px -1px 1px #000 ); 
+  }
 }
 
-.iconesrodape span{
-  padding: 0 2%;
-  text-decoration: none;
-  transition: all .5s;
+.iconesrodape {
+  span{
+    padding: 0 2%;
+    text-decoration: none;
+    transition: all .5s;
+  }
+
+  .btn-sociais {
+  width: 5.2rem;
+  padding: 1rem 0.5rem;
+  }
+
+  a:hover {
+    text-decoration: none !important;
+    -webkit-filter: brightness(0.1);
+    filter: brightness(0.1);
+    color: #000000;
+  }
 }
 
-.iconessociais a:hover{
-  color: $secondary-color;
-  text-decoration: none !important;
-  -webkit-filter: drop-shadow( -1px -1px 1px #000 );
-  filter: drop-shadow( -1px -1px 1px #000 );
-}
-
-.iconesrodape a:hover{
-  text-decoration: none !important;
-  -webkit-filter: brightness(0.1);
-  filter: brightness(0.1);
-  color: #000000;
-}
-
-/* -- FIM DOS ÍCONES SOCIAIS --*/
 
 /* -- SHARABLES DAS NOTÍCIAS --*/
 .sharable {
