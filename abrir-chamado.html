@@ -6,6 +6,7 @@
   <title>Protótipo ASAsys</title>
 
   <!-- CSS  -->
+
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="slick/slick.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -22,7 +23,7 @@
 			<div id="navigation" class="amber darken-1 nav-sup hide-on-med-and-down" role="navigation">
 		      	<div class="container">
 		      	  	<ul class="right">
-			          	<li><a href="abrir-chamado.html">Abrir Chamado</a></li>
+			          	<li class="active"><a href="abrir-chamado.html">Abrir Chamado</a></li>
 			          	<li><a href="area-restrita-login.html">Área Restrita</a></li>
 		        	</ul>
 		      	</div>  
@@ -32,7 +33,7 @@
 		    <div class="nav-wrapper container">
 		      	<a id="logo-container" href="index.html" class="brand-logo"><img src="img/logo-asasys.png" alt=""></a>
 		      	<ul class="right hide-on-med-and-down">
-			        <li class="active"><a href="index.html">HOME</a></li>
+			        <li><a href="index.html">HOME</a></li>
 			        <li><a href="produtos.html">PRODUTOS</a></li>	      
 			        <li><a href="empresa.html">A EMPRESA</a></li>
 			        <li><a href="clientes.html">CLIENTES</a></li>
@@ -45,10 +46,10 @@
 		     	<ul id="nav-mobile" class="side-nav">
 			        <li class="logo"><a href="index.html"><img src="img/logo-asasys.png" alt=""></a></li>
 			        <li class="divider"></li>
-			        <li><a href="abrir-chamado.html">ABRIR CHAMADO</a></li>
+			        <li class="active"><a href="abrir-chamado.html">ABRIR CHAMADO</a></li>
 			        <li><a href="area-restrita-login.html">ÁREA RESTRITA</a></li>
 			        <li class="divider"></li>
-			        <li class="active"><a href="index.html">HOME</a></li>
+			        <li><a href="index.html">HOME</a></li>
 			        <li><a href="produtos.html">PRODUTOS</a></li>	      
 			        <li><a href="empresa.html">A EMPRESA</a></li>
 			        <li><a href="clientes.html">CLIENTES</a></li>
@@ -79,100 +80,39 @@
 
 			  <!-- Toggle de ativação do sidenav em reponsividade -->
 		      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-		      
+
 		    </div> <!-- Fim da barra de navegação principal -->
 	 	</nav>
 	</div> <!-- Fim da barra de navegação -->
 
-	<!-- Banner/Imagem principal -->
-  	<div class="section-banner no-pad-bot" id="index-banner">
-        <div class="slider">
-    		<ul class="slides">
-		      	<li>
-		        	<img src="img/feature-graphic-como.png">
-		        	<!-- Captions da imagem de destaque -->
-		        	<!--<div class="caption center-align">
-		          	<h3>This is our big Tagline!</h3>
-		          	<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-		        	</div>-->
-		      	</li>
-	    	</ul>
-	  	</div>
-    </div><!--Fim da área do Banner/Imagem principal -->
-
-	<!--Área de chamados/destaques -->
 	<div class="container">
-	    <div class="section extra-pad">
-	      	<div class="row">
+		<div class="section">
+			<!-- Breadcrumb -->
+			<p class="breadcrumb"><a href="index.html">Home</a> » Abertura de Chamados </p>
+			<!-- Título -->
+			<h2 class="center">Abertura de Chamados</h2>
+			<br>
+			<!-- Div do alerta temporário -->
+			<div class="alerta">
+				<span class="close">X</span><span class="texto">Atenção, esse é o alerta 00001 de teste.</span>
+			</div> <!-- Fim da div do alerta -->
 
-	      		<!-- Destaque número 1 -->
-	        	<div class="col m12 l4">
-		          	<div class="icon-block">
-		            	<h2 class="center grey-text text-darken-3"><i class="large mdi-hardware-laptop-chromebook"></i></h2>
-		            	<h1 class="center">Produtos ASAsys</h1>
+			<div class="row">
+				<!-- Coluna centralizada da abertura de chamados -->
+				<div class="col m10 offset-m1 s12">
+					<br>
+					<!-- iframe da abertura de chamados -->
+					<iframe src="http://200.150.146.8/sc8/app/chamado/ctr_abertura_chamado_help_desk/ctr_abertura_chamado_help_desk.php"></iframe>
+					<!-- fim do iframe de abertura dos chamados -->
+				</div><!-- Fim da coluna centralizada da abertura de chamados -->
+			</div><!-- Fim da Row -->
+		</div> <!-- fim da section -->
+		
+		<!-- Section inferior de avisos e notícias -->
+		<div class="section extrabig-pad-bot">
+	    	<div class="row">
 
-		            	<p class="center">A ASAsys Informática possui uma linha de Softwares de alta performance e qualidade, capazes de atender diversos ramos varejistas.</p>
-
-		            	<!-- Botão -->
-		            	<div class="call-button">
-		            	<a class="waves-effect waves-light btn">Veja nossos Produtos</a>
-		            	</div><!-- Fim do botão -->
-	            	
-		        	</div>
-	<!-- Break -->  <br>
-	<!-- Break --> 	<br>
-	<!-- Divider--> <div class="divider-mobile hide-on-large-only"></div>
-	<!-- Break -->  <br>
-		    	</div> <!-- Fim do destaque número 1 -->
-
-				<!-- Destaque número 2 -->
-		        <div class="col m12 l4">
-		          	<div class="icon-block">
-			            <h2 class="center grey-text text-darken-3"><i class="large mdi-communication-business"></i></h2>
-			            <h1 class="center">Quem Somos</h1>
-
-			            <p class="center">A ASAsys informática está presente no mercado há mais de 15 anos desenvolvendo soluções em consultoria e automação comercial.</p>
-
-			            <!-- Botão -->
-			            <div class="call-button">
-			            <a class="waves-effect waves-light btn">Conheça a Empresa</a>
-			            </div> <!-- Fim do Botão -->
-
-		          	</div>
-	<!-- Break -->  <br>
-	<!-- Break -->  <br>
-	<!-- Divider--> <div class="divider-mobile hide-on-large-only"></div>
-	<!-- Break -->  <br>
-		        </div> <!-- Fim do destaque número 2 -->
-
-				<!-- Destaque número 3 -->
-		        <div class="col m12 l4">
-		          	<div class="icon-block">
-			            <h2 class="center grey-text text-darken-3"><i class="large mdi-communication-chat"></i></h2>
-			            <h1 class="center">Avisos & Notícias</h1>
-
-			            <p class="center">Fique por dentro dos comunicados ASA e também das últimas notícias, dicas e acontecimentos do mercado nacional.</p>
-
-			            <!-- Botão -->
-			            <div class="call-button">
-			            <a class="waves-effect waves-light btn">Leia Mais</a>
-			            </div> <!-- Fim do botão -->
-
-		         	</div>
-	<!-- Break -->  <br>
-	<!-- Break -->  <br>
-		        </div> <!-- Fim do destaque número 3 -->
-	  		</div> <!-- Fim row -->
-	    </div> <!-- Fim Section -->
-	</div> <!-- Fim do módulo de chamados/destaques -->
-
-	<!-- Área de Notícias e Avisos -->
-	<div class="amber darken-1">
-	    <div class="container">
-	    	<div class="section no-pad-top extra-pad-bot">
-		    	<div class="row">
-
-		    		<!-- Módulo de avisos -->
+	    		<!-- Módulo de avisos -->
 			    	<div class="col-slick m12 l7">
 			    		<h3>Avisos</h3>
 						<div id="moduloavisos">
@@ -188,7 +128,7 @@
 
 						        	<!-- Botão -->
 						        	<div class="call-button">
-						        	<a href="#" class="right waves-effect waves-light btn grey darken-2">Leia Mais</a>
+						        	<a href="#" class="right waves-effect waves-light btn">Leia Mais</a>
 						        	</div><!--Fim do botão -->
 						        </div>
 					        </div><!-- Fim da caixa de avisos -->
@@ -204,7 +144,7 @@
 
 						        	<!-- Botão -->
 						        	<div class="call-button">
-						        	<a href="#" class="right waves-effect waves-light btn grey darken-2">Leia Mais</a>
+						        	<a href="#" class="right waves-effect waves-light btn">Leia Mais</a>
 						        	</div><!--Fim do botão -->
 						        </div>
 					        </div><!-- Fim da caixa de avisos -->
@@ -273,48 +213,11 @@
 			    		</div><!-- Fim da caixa de notícia única -->
 				    </div><!-- Fim do Módulo de Notícias -->
 
-				</div><!--Row-->
-			</div><!--Section-->
-		</div><!--Container-->
-	</div><!--Fim da área de notícias e avisos -->
+			</div><!--Row-->
+		</div><!-- Fim da section inferior-->
 
-	<!-- Área 'Nossos Clientes' -->
-	<div class="container">
-		<div class="section extrabig-pad-bot">
-			<div class="row">
-				<div class="col s12">
-					<h2 class="center">Nossos Clientes</h2>
-					<br>
-					<p>Há mais de 15 anos com uma lista progressiva de clientes, que comprova nossa competência e bom serviço.
-					Oferecemos estabilidade, segurança, garantia, atendimento de qualidade e sigilo das informações de sua empresa. Veja abaixo a lista de clientes que confiam nos serviços da ASAsys Informática e utilizam nossos produtos.</p>
-				</div>
-
-				<!-- Depoimento alinhado à direita com offset -->
-				<div class="col m10 offset-m2 s11 offset-s1">
-					<blockquote class="right">
-						<em>'A ASAsys oferece resoluções rápidas de problemas, com bom suporte e ainda uma flexibilidade para adaptação de novas ferramentas."<br>(Márcio - Diretor MegaFarma)</em>
-					</blockquote>
-				</div> <!-- Fim do Depoimento -->
-			</div> <!-- Row -->
-
-			<!-- Slider dos clientes, cada cliente em uma div -->
-			<div class="faixaclientes">
-				<div><img src="img/clientes/atual-min.png" alt=""></div>
-				<div><img src="img/clientes/cityfarma-min.png" alt=""></div>
-				<div><img src="img/clientes/droga-news-min.png" alt=""></div>
-				<div><img src="img/clientes/d-vitaminas-min.png" alt=""></div>
-				<div><img src="img/clientes/tamoio-min.png" alt=""></div>
-				<div><img src="img/clientes/toque-bela-min.png" alt=""></div>
-				<div><img src="img/clientes/cityfarma-min.png" alt=""></div>
-				<div><img src="img/clientes/droga-news-min.png" alt=""></div>
-				<div><img src="img/clientes/d-vitaminas-min.png" alt=""></div>
-				<div><img src="img/clientes/tamoio-min.png" alt=""></div>
-				<div><img src="img/clientes/toque-bela-min.png" alt=""></div>
-				<div><img src="img/clientes/cityfarma-min.png" alt=""></div>
-			</div> <!-- fim do slider dos clientes -->
-		</div> <!-- Section -->
-	</div><!--Container-->
-  <!-- Fim do conteúdo -->
+	</div> <!-- Fim do conteúdo geral da página -->
+	
 
   <!-- container geral do Rodapé -->					
   <footer class="page-footer amber darken-1">
@@ -349,18 +252,18 @@
 			<!-- Coluna das Redes Sociais e PArceiros -->
 	        <div class="col m12 l5">
 				<h1>Redes Sociais</h1>
-	          	<ul class="iconesrodape">
+	        	<ul class="iconesrodape">
 					<a href="http://facebook.com"><span><i class="medium ic-facebook"></i></span></a>
 					<a href="http://twitter.com"><span><i class="medium ic-twitter"></i></span></a>
 					<a href="http://plus.google.com"><span><i class="medium ic-google-plus"></i></span></a>
 					<a href="http://linkedin.com"><span><i class="medium ic-linkedin"></i></span></a>
-		          </ul>
+	          	</ul>
 	          	<h1>Parceiros</h1>
 	          	<ul class="iconesrodape">
-					<a href=""><img class="btn-sociais" src="img/parceiros/alog-neg-min.png" alt=""></a>
-					<a href=""><img class="btn-sociais" src="img/parceiros/farmacia-popular-neg-min.png" alt=""></a>
-					<a href=""><img class="btn-sociais" src="img/parceiros/software-express-neg-min.png" alt=""></a>
-					<a href=""><img class="btn-sociais" src="img/parceiros/vale-mais-saude-neg-min.png" alt=""></a>
+					<a href="#"><img class="btn-sociais" src="img/parceiros/alog-neg-min.png" alt=""></a>
+					<a href="#"><img class="btn-sociais" src="img/parceiros/farmacia-popular-neg-min.png" alt=""></a>
+					<a href="#"><img class="btn-sociais" src="img/parceiros/software-express-neg-min.png" alt=""></a>
+					<a href="#"><img class="btn-sociais" src="img/parceiros/vale-mais-saude-neg-min.png" alt=""></a>
 	          	</ul>
 	          <br> <!-- Break -->
 	          <br> <!-- Break -->
@@ -419,51 +322,8 @@
 	$('#navigation, #navigationfix').toggleClass('collapse', $(document).scrollTop() > 0);
 	});
 
-    $(document).ready(function(){
-
-    	/* -------- banner-slider principal -------- */
-	  	$('.slider').slider({full_width: false});
-
-      	/* --------------- slider dos logotipos de clientes -- */
-		$('.faixaclientes').slick({
-			autoplay: true,
-			infinite: true,
-			draggable: false,
-			autoplaySpeed: 1,
-			cssEase: 'linear',
-			speed: 9000,
-			slidesToShow: 4,
-			slidesToScroll: 1,
-			arrows: false,
-			responsive: [
-				{
-				breakpoint: 992,
-					settings: {
-					autoplay: false,
-					autoplaySpeed: 0,
-					swipe: true,
-					speed: 300,
-					slidesToShow: 3,
-					slidesToScroll: 3,
-					arrows: true
-					}
-				},
-				{
-				breakpoint: 600,
-					settings: {
-					autoplay: false,
-					autoplaySpeed: 0,
-					swipe: true,
-					speed: 300,
-					slidesToShow: 2,
-					slidesToScroll: 2,
-					arrows: true
-					}
-				}
-			]
-		});
-
-       	/* ---------------- slider dos avisos -- */
+	$(document).ready(function() {
+		/* ---------------- slider dos avisos -- */
 		$('#moduloavisos').slick({
 			dots: true,
 			arrows: false,
@@ -471,22 +331,12 @@
 		});
 	});
 
-    /* -- jquery para seleção hover das notícias [imagem]--*/
-    /*$( ".newscard" ).find( "p" ).hover(
-  		function() {
-    		$( this ).find("#imgnews").addClass( "imghover" );
-    	}, function () {
-    		$( this ).find("#imgnews").removeClass( "imghover" );
-  	});
+    $('.close').click(
+    	function(){
+    		$(this).closest('.alerta').fadeOut(300);
+    });
 
-    /* -- jquery para seleção hover das notícias [texto]-- */
-    /*$( "#imgnews, #linknews" ).hover(
-  		function() {
-    		$( this ).addClass( "linkhover" );
-    	}, function () {
-    		$( this ).removeClass( "linkhover" );
-  	}); */
-  </script>
+    </script>
 
   </body>
 </html>

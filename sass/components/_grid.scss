@@ -15,7 +15,8 @@
   }
 
   &.extra-pad {
-    padding: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   
   &.extra-pad-bot {
@@ -60,7 +61,12 @@
   }
 
   &.extra-pad {
-    padding: 3.3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    @media #{$medium-and-down} {
+      padding-top: 1.5rem;
+    }
   }
   
   &.extra-pad-bot {
@@ -73,6 +79,10 @@
 
   &.extra-pad-top {
     padding-top: 3.5rem;
+
+      @media #{$medium-and-down} {
+      padding-top: 1.7rem;
+    }
   }
 }
 
@@ -91,11 +101,13 @@
   }
 }
 
-
 .row {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+
+  &.pad-top {
+    padding-top: 2rem;
+  }
 
   // Clear floating children
   &:after {
@@ -127,7 +139,76 @@
       $i: $i + 1;
     }
 
-    @media #{$medium-and-up} {
+    @media #{$medium-and-up} { // Alterado por Liandro, testes / medium-and-up / medium-and-down
+
+      $i: 1;
+      @while $i <= $num-cols {
+        $perc: unquote((100 / ($num-cols / $i)) + "%");
+        &.m#{$i} {
+          width: $perc;
+          margin-left: 0;
+        }
+        $i: $i + 1;
+      }
+      $i: 1;
+      @while $i <= $num-cols {
+        $perc: unquote((100 / ($num-cols / $i)) + "%");
+        &.offset-m#{$i} {
+          margin-left: $perc;
+        }
+        $i: $i + 1;
+      }
+
+    }
+
+    @media #{$large-and-up} {
+
+      $i: 1;
+      @while $i <= $num-cols {
+        $perc: unquote((100 / ($num-cols / $i)) + "%");
+        &.l#{$i} {
+          width: $perc;
+          margin-left: 0;
+        }
+        $i: $i + 1;
+      }
+      $i: 1;
+      @while $i <= $num-cols {
+        $perc: unquote((100 / ($num-cols / $i)) + "%");
+        &.offset-l#{$i} {
+          margin-left: $perc;
+        }
+        $i: $i + 1;
+      }
+
+    }
+
+  }
+
+  .col-slick {
+    float: left;
+    @include box-sizing(border-box);
+    padding: 0 $gutter-width / 2;
+
+    $i: 1;
+    @while $i <= $num-cols {
+      $perc: unquote((100 / ($num-cols / $i)) + "%");
+      &.s#{$i} {
+        width: $perc;
+        margin-left: 0;
+      }
+      $i: $i + 1;
+    }
+    $i: 1;
+    @while $i <= $num-cols {
+      $perc: unquote((100 / ($num-cols / $i)) + "%");
+      &.offset-s#{$i} {
+        margin-left: $perc;
+      }
+      $i: $i + 1;
+    }
+
+    @media #{$medium-and-down} { // Alterado por Liandro, testes / medium-and-up / medium-and-down
 
       $i: 1;
       @while $i <= $num-cols {
@@ -173,6 +254,7 @@
 
   }
 }
+
 
 .corpo-noticia {
   margin-top: 1.2rem;
