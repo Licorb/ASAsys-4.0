@@ -16,7 +16,62 @@
   border-radius: 2px;
   @extend .z-depth-1;
   width: 100%;
-  
+  // classe para página de vídeos
+  &.video {
+    
+    .card-image {
+    position: relative;
+
+      // Image background for content
+      img {
+        border-radius: 2px 2px 0 0;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+
+      .infos {
+          color: #ccc;
+
+        .tempo {
+          position: absolute;
+          bottom: 20px;
+          right: 0px;
+          font-size: 1.1rem;
+          line-height: 1.8rem;
+          height: 1.8rem;
+          padding: 0 1rem;
+          background-color: rgba(0,0,0,0.7);
+        }
+      }
+    }
+    .card-content {
+      padding-left: $card-padding / 3;
+      padding-right: $card-padding / 2;
+      padding-bottom: $card-padding;
+      border-radius: 0 0 2px 2px;
+
+      .titulo {
+        margin-top: 0;
+        font-weight: 400;
+        color: color("amber", "darken-2");
+
+        &:hover {
+          text-decoration: underline;
+          color: color("amber", "darken-3");
+        }
+      }
+
+      p {
+        margin-top: 0.5rem;
+        color: inherit;
+      }
+    }
+  } // fim da classe para página de videos
+
   &.decorate {
   border-top: 3px solid $secondary-color;
   border-bottom: 3px solid $secondary-color;

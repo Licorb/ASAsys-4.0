@@ -782,6 +782,12 @@ span.badge {
     margin-bottom: 1.5rem;
   }
 
+  &.mobile {
+    @media #{$medium-and-down}{
+      margin-top: 0rem;
+    }
+  }
+
   a {
     font-size: 1.1rem;
     font-weight: 500;

@@ -3373,6 +3373,11 @@ span.badge.new:after {
     margin-bottom: 1.5rem;
   }
 }
+@media only screen and (max-width: 992px) {
+  .breadcrumb.mobile {
+    margin-top: 0rem;
+  }
+}
 .breadcrumb a {
   font-size: 1.1rem;
   font-weight: 500;
@@ -7739,6 +7744,50 @@ small {
   background-color: #fff;
   border-radius: 2px;
   width: 100%;
+}
+.card.video .card-image {
+  position: relative;
+}
+.card.video .card-image img {
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.card.video .card-image .infos {
+  color: #ccc;
+}
+.card.video .card-image .infos .tempo {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  height: 1.8rem;
+  padding: 0 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.card.video .card-content {
+  padding-left: 6.66667px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  border-radius: 0 0 2px 2px;
+}
+.card.video .card-content .titulo {
+  margin-top: 0;
+  font-weight: 400;
+  color: #ffa000;
+}
+.card.video .card-content .titulo:hover {
+  text-decoration: underline;
+  color: #ff8f00;
+}
+.card.video .card-content p {
+  margin-top: 0.5rem;
+  color: inherit;
 }
 .card.decorate {
   border-top: 3px solid #ffb300;
