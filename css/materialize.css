@@ -2676,6 +2676,7 @@ ul li {
 }
 
 .divider-news {
+  margin-top: -5px;
   position: relative;
   height: 1px;
   background-color: #e0e0e0;
@@ -3439,6 +3440,10 @@ span.badge.new:after {
 .sharable {
   position: relative;
   top: -20px;
+}
+
+.sharable-bottom {
+  margin: 1rem 0 2rem 0;
 }
 
 @font-face {
@@ -8265,6 +8270,12 @@ small {
   float: left;
   margin-right: 3%;
   margin-top: -10px;
+}
+@media only screen and (max-width: 600px) {
+  .noticia-corpo .imagem-destaque {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
 }
 .noticia-corpo .imagem-destaque img {
   width: 100%;

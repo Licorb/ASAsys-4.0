@@ -100,6 +100,7 @@ ul {
 }
 
 .divider-news {
+  margin-top: -5px;
   position: relative;
   height: 1px;
   background-color: color("grey", "lighten-2");
@@ -863,4 +864,8 @@ span.badge {
 .sharable {
   position:relative;
   top: -20px;
+}
+
+.sharable-bottom {
+  margin: 1rem 0 2rem 0;
 }
