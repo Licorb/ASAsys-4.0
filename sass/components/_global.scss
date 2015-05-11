@@ -63,7 +63,9 @@ ul {
 
 
 // Z-levels
-
+.z-depth-0 {
+    @include box-shadow-2(0, 0);
+}
 .z-depth-1{
     @include box-shadow-2(0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12));
 }

@@ -71,7 +71,11 @@ footer.page-footer {
 
 /*-----------página empresa --*/
 
-
+#icon-block {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
 
 
 /* Google Maps */

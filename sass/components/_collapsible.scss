@@ -24,6 +24,16 @@
     text-align: center;
     margin-right: 1rem;
   }
+
+  @media #{$small-and-down} {
+    padding: 0 0.5rem;
+
+    i{
+      width: 1.7rem;
+      font-size: 1.3rem;
+      margin-right: 0.5rem;
+    }
+  }  
 }
 
 .collapsible-body {

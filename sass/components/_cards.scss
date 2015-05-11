@@ -16,11 +16,20 @@
   border-radius: 2px;
   @extend .z-depth-1;
   width: 100%;
+
+  .titulo-modulo {
+    float: left;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
   // classe para página de vídeos
   &.video {
     
     .card-image {
     position: relative;
+    float: left;
 
       // Image background for content
       img {

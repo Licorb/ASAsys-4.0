@@ -2625,6 +2625,12 @@ ul li {
   clear: both;
 }
 
+.z-depth-0 {
+  -webkit-box-shadow: 0, 0;
+  -moz-box-shadow: 0, 0;
+  box-shadow: 0, 0;
+}
+
 .z-depth-1, nav, .nav-inf, .card-panel, .card, .alerta, .toast, .btn, .btn-large, .btn-small, .btn-full, .btn-floating, .dropdown-content, .collapsible, .side-nav {
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -7474,13 +7480,13 @@ h2 {
 
 h3 {
   font-size: 1.7rem;
-  line-height: 1.87rem;
+  line-height: 2.04rem;
   margin: 1.7rem 0 0.85rem 0;
 }
 
 h4 {
   font-size: 1.4rem;
-  line-height: 1.54rem;
+  line-height: 1.68rem;
   margin: 1.4rem 0 0.7rem 0;
 }
 
@@ -7750,8 +7756,15 @@ small {
   border-radius: 2px;
   width: 100%;
 }
+.card .titulo-modulo {
+  float: left;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
 .card.video .card-image {
   position: relative;
+  float: left;
 }
 .card.video .card-image img {
   border-radius: 2px 2px 0 0;
@@ -8347,13 +8360,19 @@ small {
   display: inline-block;
   height: 36px;
   line-height: 36px;
+  background-color: #ccc;
   outline: 0;
-  padding: 0 2rem;
+  padding: 0 1.8rem;
   text-transform: uppercase;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent;
   margin-left: auto;
   margin-right: auto;
+}
+@media only screen and (max-width: 992px) {
+  .btn, .btn-large, .btn-small, .btn-full, .btn-flat {
+    padding: 0 3rem;
+  }
 }
 
 .btn.disabled, .disabled.btn-large, .disabled.btn-small, .disabled.btn-full, .btn-floating.disabled, .btn-large.disabled, .btn:disabled, .btn-large:disabled, .btn-small:disabled, .btn-full:disabled, .btn-large:disabled, .btn-floating:disabled {
@@ -8373,12 +8392,12 @@ small {
 .call-button {
   text-align: right;
 }
-
 @media only screen and (min-width: 601px) {
   .call-button {
     text-align: center;
   }
 }
+
 .btn i, .btn-large i, .btn-small i, .btn-full i, .btn-floating i, .btn-large i, .btn-flat i {
   font-size: 1.3rem;
   line-height: inherit;
@@ -8398,6 +8417,37 @@ small {
   cursor: pointer;
 }
 .btn:hover, .btn-large:hover, .btn-small:hover, .btn-full:hover {
+  background-color: #ffbb1a;
+}
+
+.btn-banner {
+  border-radius: 2px;
+  display: inline-block;
+  height: 46.8px;
+  line-height: 43.2px;
+  padding: 0 3rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 3px #333;
+  text-align: center;
+  letter-spacing: 1px;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.btn-banner:hover {
   background-color: #ffbb1a;
 }
 
@@ -8493,10 +8543,17 @@ button.btn-floating {
   width: 80%;
   margin: 5% 10%;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 601px) and (max-width: 992px) {
   .btn-full {
     margin: 5%;
     width: 90%;
+    padding: 0;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .btn-full {
+    padding: 0 1rem;
   }
 }
 .btn-full.truefull {
@@ -8789,6 +8846,16 @@ a.waves-effect .waves-ripple {
   float: left;
   text-align: center;
   margin-right: 1rem;
+}
+@media only screen and (max-width: 600px) {
+  .collapsible-header {
+    padding: 0 0.5rem;
+  }
+  .collapsible-header i {
+    width: 1.7rem;
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+  }
 }
 
 .collapsible-body {
@@ -10559,14 +10626,19 @@ select {
 }
 .slider .slides li .caption {
   color: #fff;
+  text-shadow: 2px 2px 4px #000;
   position: absolute;
   top: 15%;
   left: 15%;
   width: 70%;
   opacity: 0;
 }
+.slider .slides li .caption .texto {
+  line-height: 2rem;
+  font-weight: 300;
+}
 .slider .slides li .caption p {
-  color: #e0e0e0;
+  color: #eeeeee;
 }
 .slider .slides li.active {
   z-index: 2;
