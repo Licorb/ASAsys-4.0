@@ -60,6 +60,10 @@
     padding-top: 0;
   }
 
+  &.extra-pad-top {
+  padding-top: 3.5rem;
+  }
+
   &.extra-pad {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -98,6 +102,13 @@
   }
   &.no-pad-top {
     padding-top: 0;
+  }
+  &.extra-pad-top {
+    padding-top: 2.5rem;
+
+    @media #{$medium-and-down} {
+      padding-top: 0.5rem
+    }
   }
 }
 

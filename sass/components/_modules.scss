@@ -41,15 +41,15 @@
 	width: 99%;
 
 	.data-noticia {
-		width: 17%;
+		width: 16%;
 		float: left;
-		padding-right: 2%;
+		padding-right: 4%;
 
 		& p {
 			line-height: 1.2rem;
-			font-size: 1.1rem;
+			font-size: 0.9rem;
 			text-align: right;
-			font-weight:300;
+			font-weight:400;
 			padding: 0;
 			margin: 0;
 		}
@@ -125,6 +125,30 @@
 		content: "";
 		display: table;
 		clear: both;
+	}
+}
+
+// Módulo para produto interno 
+.topo-produto {
+	width: 100%;
+
+	.produto-img {
+		width: 30%;
+		float: left;
+
+		img {
+			width: 100%;
+			padding-right: 10%;
+		}
+
+		@media #{$small-and-down} {
+			width: 80%;
+			margin: 0 10%;
+		}
+	}
+
+	.produto-txt {
+		width: 100%;
 	}
 }
 

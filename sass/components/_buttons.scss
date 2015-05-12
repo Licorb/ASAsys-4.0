@@ -93,7 +93,11 @@
   cursor: pointer;
   background-color: transparent;
   border: 1px solid #fff;
-
+  
+  @media #{$small-and-down}{
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
   &:hover {
     background-color: lighten($button-color, 5%);
   }

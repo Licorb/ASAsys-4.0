@@ -6541,6 +6541,9 @@ span.badge.new:after {
 .section.no-pad-top {
   padding-top: 0;
 }
+.section.extra-pad-top {
+  padding-top: 3.5rem;
+}
 .section.extra-pad {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -6577,6 +6580,14 @@ span.badge.new:after {
 }
 .section-banner.no-pad-top {
   padding-top: 0;
+}
+.section-banner.extra-pad-top {
+  padding-top: 2.5rem;
+}
+@media only screen and (max-width: 992px) {
+  .section-banner.extra-pad-top {
+    padding-top: 0.5rem;
+  }
 }
 
 .row {
@@ -8200,15 +8211,15 @@ small {
   width: 99%;
 }
 .caixa-noticia .data-noticia {
-  width: 17%;
+  width: 16%;
   float: left;
-  padding-right: 2%;
+  padding-right: 4%;
 }
 .caixa-noticia .data-noticia p {
   line-height: 1.2rem;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   text-align: right;
-  font-weight: 300;
+  font-weight: 400;
   padding: 0;
   margin: 0;
 }
@@ -8269,6 +8280,27 @@ small {
   content: "";
   display: table;
   clear: both;
+}
+
+.topo-produto {
+  width: 100%;
+}
+.topo-produto .produto-img {
+  width: 30%;
+  float: left;
+}
+.topo-produto .produto-img img {
+  width: 100%;
+  padding-right: 10%;
+}
+@media only screen and (max-width: 600px) {
+  .topo-produto .produto-img {
+    width: 80%;
+    margin: 0 10%;
+  }
+}
+.topo-produto .produto-txt {
+  width: 100%;
 }
 
 .noticia-corpo {
@@ -8446,6 +8478,12 @@ small {
   cursor: pointer;
   background-color: transparent;
   border: 1px solid #fff;
+}
+@media only screen and (max-width: 600px) {
+  .btn-banner {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
 }
 .btn-banner:hover {
   background-color: #ffbb1a;
@@ -9700,15 +9738,27 @@ select:disabled {
   position: relative;
 }
 .file-field input.file-path {
-  margin-left: 100px;
-  width: calc(100% - 100px);
+  width: 90%;
+  text-align: left;
 }
 .file-field .btn, .file-field .btn-large, .file-field .btn-small, .file-field .btn-full {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   height: 3rem;
   line-height: 3rem;
+}
+@media only screen and (max-width: 600px) {
+  .file-field input.file-path {
+    float: left;
+    width: 80%;
+  }
+  .file-field .btn, .file-field .btn-large, .file-field .btn-small, .file-field .btn-full {
+    float: left;
+    width: 30%;
+    padding: 0;
+    font-size: 0.8rem;
+  }
 }
 .file-field span {
   cursor: pointer;
@@ -10632,6 +10682,13 @@ select {
   left: 15%;
   width: 70%;
   opacity: 0;
+}
+@media only screen and (max-width: 600px) {
+  .slider .slides li .caption {
+    top: 0;
+    width: 90%;
+    left: 5%;
+  }
 }
 .slider .slides li .caption .texto {
   line-height: 2rem;
